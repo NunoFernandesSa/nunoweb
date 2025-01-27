@@ -21,21 +21,24 @@ function Work() {
     {
       imgSrc: "/images/works/gracoeiro.png",
       title: "www.gracoeiro.com",
-      subtitle: "Website for a debt collector",
+      subtitle:
+        "Dans le cadre de ce projet, j'ai développé et optimisé le site web www.Gracoeiro.com pour une experte en recouvrement de créances amiables et contentieux.",
       tags: ["PHP", "Wordpress", "Javascript", "Développement web"],
       projectLink: "https://gracoeiro.com/",
     },
     {
       imgSrc: "/images/works/joaocerqueirapereira.png",
       title: "www.joaocerqueirapereira.com",
-      subtitle: "Website for a ...",
+      subtitle:
+        "Dans ce projet, de refonte du site web www.joaocerqueirapereira.com l'objectif principal était de créer une plateforme professionnelle et intuitive, mettant en valeur les services de l'entreprise.",
       tags: ["CMS", "PHP", "Wordpress", "Javascript", "Développement web"],
       projectLink: "https://joaocerqueirapereira.com/",
     },
     {
       imgSrc: "/images/works/project-2.jpg",
-      title: "Snake Game",
-      subtitle: "Snake Game (playable only on PC)",
+      title: "Snake (jouable uniquement sur PC)",
+      subtitle:
+        "J'ai créé le fameux mini-jeu du Snake en JavaScript Vanilla. Interface simple, mais addictif, qui démontre mes compétences en développement web.",
       tags: ["HTML", "CSS", "Javascript", "Développement web"],
       projectLink: "https://nunofds.github.io/gamesnake/",
     },

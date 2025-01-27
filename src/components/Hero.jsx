@@ -62,9 +62,9 @@ function Hero() {
             />
 
             <ButtonOutline
-              href={"#about"}
-              label={"Scroll Down"}
-              icon="arrow_downward"
+              href={"#contact"}
+              label={"Contactez-moi"}
+              icon="message"
             />
           </div>
         </div>

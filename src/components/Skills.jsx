@@ -13,57 +13,57 @@ function Skills() {
     {
       imgSrc: "/images/skills/figma.png",
       label: "Figma",
-      desc: "Design tool",
+      desc: "Design & Prototypage",
     },
     {
       imgSrc: "/images/skills/css.png",
       label: "CSS",
-      desc: "User Interface",
+      desc: "Styliser et mettre en forme",
     },
     {
       imgSrc: "/images/skills/tailwindcss.png",
       label: "TailwindCSS",
-      desc: "User Interface",
+      desc: "Styliser et mettre en forme",
     },
     {
       imgSrc: "/images/skills/javascript.png",
       label: "JavaScript",
-      desc: "Interaction",
+      desc: "Interactions & animations",
     },
     {
       imgSrc: "/images/skills/python.png",
       label: "Python",
-      desc: "Web Server",
+      desc: "Serveur web",
     },
     {
       imgSrc: "/images/skills/django.png",
       label: "Django",
-      desc: "Backend Framework",
+      desc: "Framework Back-end",
     },
     {
       imgSrc: "/images/skills/postgresql.png",
       label: "PostgreSQL",
-      desc: "Database",
+      desc: "Base de données SQL",
     },
     {
       imgSrc: "/images/skills/mysql.png",
       label: "mySQL",
-      desc: "Database",
+      desc: "Base de données",
     },
     {
       imgSrc: "/images/skills/react.png",
       label: "React",
-      desc: "Frontend Framework",
+      desc: "Bibliothèque front-end",
     },
     {
       imgSrc: "/images/skills/react.png",
       label: "React Native",
-      desc: "Mobile Framework",
+      desc: "Applications mobiles",
     },
     {
       imgSrc: "/images/skills/expo.png",
       label: "Expo",
-      desc: "Mobile ecosystem of tools",
+      desc: "Écosystème mobile & Outils",
     },
   ];
 

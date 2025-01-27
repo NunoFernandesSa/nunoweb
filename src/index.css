@@ -55,7 +55,7 @@ body {
 }
 
 .img-box {
-  @apply bg-zinc-700 overflow-hidden rounded-lg;
+  @apply bg-zinc-700 overflow-hidden rounded-lg min-h-48;
 }
 .img_cover {
   @apply w-full h-full object-cover;
