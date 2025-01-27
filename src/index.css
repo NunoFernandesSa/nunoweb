@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+* --- BASE ---
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-zinc-800 text-zinc-50;
+}
+
+/* ***************************************** */
+/* -------- 
+* TYPOGRAPHY 
+-------- */
+.headline-1,
+.headline-2,
+.headline-3 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.headline-1 {
+  @apply text-3xl leading-tight font-semibold lg:text-[42px] lg:leading-[1.15];
+}
+
+.headline-2 {
+  @apply text-2xl lg:text-4xl lg:leading-tight font-semibold;
+}
+
+.headline-3 {
+  @apply text-xl lg:text-2xl md:leading-tight font-semibold;
+}
+
+.title-1 {
+  @apply text-lg font-normal;
+}
+
+/* ***************************************** */
+/* -------- 
+* UTILITIES 
+-------- */
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.section {
+  @apply pt-20 lg:pt-32;
+}
+
+.img-box {
+  @apply bg-zinc-700 overflow-hidden rounded-lg;
+}
+.img_cover {
+  @apply w-full h-full object-cover;
+}
+
+/* ***************************************** */
+/* -------- 
+* COMPONENTS 
+-------- */
+
+/* 
+* --- menu btn ---
+*/
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-lg ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;
+}
+
+/* 
+* --- navbar ---
+*/
+
+.navbar {
+  @apply flex items-center p-2 bg-zinc-400/20 rounded-md ring-inset ring-1 ring-zinc-50/5;
+}
+
+/* -----------To DO LATTER----------- */
+/* .navbar-side {
+  @apply hidden md:flex  flex-col items-center justify-center p-2 bg-zinc-400/20 rounded-md ring-inset ring-1 ring-zinc-50/5;
+} */
+/* ---------------------- */
+.navbar.active {
+  @apply opacity-100 blur-0 visible;
+}
+.navbar .active-box {
+  @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-md -z-10 transition-[top,left] duration-500;
+}
+.nav-link {
+  @apply grid items-center h-9 px-4 text-lg font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
+}
+.nav-link.active {
+  @apply text-emerald-800 duration-500;
+}
+
+/* 
+* --- Button ---
+*/
+
+.btn {
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
+}
+.btn-secondary {
+  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+}
+.btn .material-symbols-rounded {
+  @apply text-[18px];
+}
+.btn:has(.material-symbols-rounded) {
+  @apply pr-3;
+}
+.btn-primary {
+  @apply h-11 bg-emerald-400 text-zinc-950 hover:bg-emerald-300 active:bg-emerald-400;
+}
+.btn-outline {
+  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
+}
+
+/* 
+* --- Contact component ---
+*/
+.label {
+  @apply block text-zinc-200 text-sm mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full p-3 text-sm bg-zinc-900 rounded-lg ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-emerald-400 focus:ring-2;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
+}
