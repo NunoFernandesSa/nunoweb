@@ -4,7 +4,7 @@
  */
 
 const aboutText1 =
-  "Je suis un développeur Web et mobile enthousiaste basé à Paris, avec une riche expérience dans la conception de sites Web, applications web et applications mobile.";
+  "Je suis Nuno, développeur Web et mobile enthousiaste basé à Paris, avec une riche expérience dans la conception de sites Web, applications web et applications mobile.";
 
 const aboutText2 =
   "Je suis constamment à l’affût des dernières technologies et tendances du secteur, cherchant à améliorer continuellement mes compétences et à repousser les limites de la créativité. Mon objectif est de transformer des idées en réalités numériques, en veillant à ce que chaque projet soit esthétiquement agréable.";

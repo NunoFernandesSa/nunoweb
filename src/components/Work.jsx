@@ -35,7 +35,7 @@ function Work() {
       projectLink: "https://joaocerqueirapereira.com/",
     },
     {
-      imgSrc: "/images/works/project-2.jpg",
+      imgSrc: "/images/works/snake.png",
       title: "Snake (jouable uniquement sur PC)",
       subtitle:
         "J'ai créé le fameux mini-jeu du Snake en JavaScript Vanilla. Interface simple, mais addictif, qui démontre mes compétences en développement web.",
