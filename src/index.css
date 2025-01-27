@@ -54,6 +54,10 @@ body {
   @apply pt-20 lg:pt-32;
 }
 
+.profile-img-box {
+  @apply bg-zinc-700 overflow-hidden rounded-lg;
+}
+
 .img-box {
   @apply bg-zinc-700 overflow-hidden rounded-lg min-h-48;
 }

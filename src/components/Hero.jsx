@@ -19,7 +19,7 @@ function Hero() {
       <div className="container lg:grid lg:grid-cols-2 lg:gap-10 items-center">
         <div>
           <div className="flex items-center gap-3">
-            <figure className="img-box block lg:hidden w-[96px] h-[96px] rounded-lg">
+            <figure className="profile-img-box block lg:hidden w-[96px] h-[96px] rounded-lg">
               <img
                 src="/profile_photo.png"
                 alt="Ma photo de profil"
