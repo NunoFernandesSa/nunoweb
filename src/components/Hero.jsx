@@ -56,9 +56,11 @@ function Hero() {
 
           <div className="flex items-center gap-4">
             <ButtonPrimary
+              href={"/pdf/mon_cv.pdf"}
               primary={true}
               label={"Dowload CV"}
               icon={"download"}
+              target={"_blank"}
             />
 
             <ButtonOutline
