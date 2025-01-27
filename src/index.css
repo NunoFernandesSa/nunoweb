@@ -90,7 +90,7 @@ body {
   @apply opacity-100 blur-0 visible;
 }
 .navbar .active-box {
-  @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-md -z-10 transition-[top,left] duration-500;
+  @apply absolute w-[50px] h-[36px] bg-zinc-50 rounded-md -z-10 transition-[top,left] duration-500;
 }
 .nav-link {
   @apply grid items-center h-9 px-4 text-lg font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;

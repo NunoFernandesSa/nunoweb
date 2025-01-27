@@ -3,78 +3,62 @@
  * @license Apache-2.0
  */
 
-/**
- * Node Modules
- */
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 
 function Navbar({ navOpen }) {
-  const lastActiveLink = useRef();
+  const navLinks = useRef([]);
   const activeBox = useRef();
 
-  const initActiveBox = () => {
-    activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-    activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-    activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
-    activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
-  };
-
-  useEffect(initActiveBox, []);
-  window.addEventListener("resize", initActiveBox);
-
-  const activeCurrentLink = (e) => {
-    lastActiveLink.current?.classList.remove("active");
-    e.target.classList.add("active");
-    lastActiveLink.current = e.target;
-
-    activeBox.current.style.top = e.target.offsetTop + "px";
-    activeBox.current.style.left = e.target.offsetLeft + "px";
-    activeBox.current.style.width = e.target.offsetWidth + "px";
-    activeBox.current.style.height = e.target.offsetHeight + "px";
-  };
-
   const navItems = [
-    {
-      label: "Home",
-      link: "#home",
-      className: "nav-link active",
-      ref: lastActiveLink,
-    },
-    {
-      label: "Person",
-      link: "#about",
-      className: "nav-link",
-    },
-    {
-      label: "design_services",
-      link: "#services",
-      className: "nav-link",
-    },
-    {
-      label: "Work",
-      link: "#work",
-      className: "nav-link",
-    },
-    // {
-    //   label: "Reviews",
-    //   link: "#reviews",
-    //   className: "nav-link",
-    // },
-    {
-      label: "Email",
-      link: "#contact",
-      className: "nav-link",
-    },
+    { label: "Home", link: "#home", className: "nav-link active" },
+    { label: "Person", link: "#about", className: "nav-link" },
+    { label: "design_services", link: "#services", className: "nav-link" },
+    { label: "Work", link: "#work", className: "nav-link" },
+    { label: "Email", link: "#contact", className: "nav-link" },
   ];
+
+  const initActiveBox = useCallback(() => {
+    const lastActiveLink = navLinks.current.find(
+      (link) => link && link.classList.contains("active")
+    );
+    if (lastActiveLink) {
+      return;
+      // activeBox.current.style.top = `${lastActiveLink.offsetTop}px`;
+      // activeBox.current.style.left = `${lastActiveLink.offsetLeft}px`;
+      // activeBox.current.style.width = `${lastActiveLink.offsetWidth}px`;
+      // activeBox.current.style.height = `${lastActiveLink.offsetHeight}px`;
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", initActiveBox);
+    return () => window.removeEventListener("resize", initActiveBox);
+  }, [initActiveBox]);
+
+  useEffect(initActiveBox, [initActiveBox]);
+
+  const activeCurrentLink = useCallback((e) => {
+    const lastActiveLink = navLinks.current.find(
+      (link) => link && link.classList.contains("active")
+    );
+    lastActiveLink?.classList.remove("active");
+    e.target.classList.add("active");
+
+    activeBox.current.style.top = `${e.target.offsetTop}px`;
+    activeBox.current.style.left = `${e.target.offsetLeft}px`;
+    activeBox.current.style.width = `${e.target.offsetWidth}px`;
+    activeBox.current.style.height = `${e.target.offsetHeight}px`;
+  }, []);
+
   return (
     <nav className={"navbar " + (navOpen ? "active" : "")}>
-      {navItems.map(({ label, link, className, ref }, key) => (
+      {navItems.map(({ label, link, className }, key) => (
         <a
           href={link}
           className={className + " material-symbols-rounded"}
           key={key}
-          ref={ref}
+          ref={(el) => (navLinks.current[key] = el)}
           onClick={activeCurrentLink}
         >
           {label}
