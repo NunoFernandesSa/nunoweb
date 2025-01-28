@@ -59,6 +59,7 @@ function Work() {
               subtitle={subtitle}
               tags={tags}
               projectLink={projectLink}
+              helperTitle={"voir le site " + title}
             />
           ))}
         </div>

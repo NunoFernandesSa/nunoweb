@@ -120,6 +120,7 @@ function ContactForm() {
         {/* --- button --- */}
         <button
           type="submit"
+          title="Envoyer le message"
           className="btn btn-primary [&]:max-w-full w-full justify-center"
         >
           Envoyer

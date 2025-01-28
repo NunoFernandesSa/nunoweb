@@ -8,7 +8,15 @@
  */
 import PropTypes from "prop-types";
 
-function WorkCard({ imgSrc, title, tags, projectLink, subtitle, classes }) {
+function WorkCard({
+  imgSrc,
+  title,
+  tags,
+  projectLink,
+  subtitle,
+  helperTitle,
+  classes,
+}) {
   return (
     <div
       className={
@@ -43,6 +51,7 @@ function WorkCard({ imgSrc, title, tags, projectLink, subtitle, classes }) {
           href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
+          title={helperTitle}
           className="absolute inset-0"
         ></a>
       </div>
@@ -56,6 +65,7 @@ WorkCard.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   projectLink: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
+  helperTitle: PropTypes.string,
   classes: PropTypes.string,
 };
 

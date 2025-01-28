@@ -11,11 +11,36 @@ function Navbar({ navOpen }) {
   const activeBox = useRef();
 
   const navItems = [
-    { label: "Home", link: "#home", className: "nav-link active" },
-    { label: "Person", link: "#about", className: "nav-link" },
-    { label: "design_services", link: "#services", className: "nav-link" },
-    { label: "Work", link: "#work", className: "nav-link" },
-    { label: "Email", link: "#contact", className: "nav-link" },
+    {
+      label: "Home",
+      link: "#home",
+      helperTitle: "Accueil",
+      className: "nav-link active",
+    },
+    {
+      label: "Person",
+      link: "#about",
+      helperTitle: "A Propos",
+      className: "nav-link",
+    },
+    {
+      label: "design_services",
+      link: "#services",
+      helperTitle: "Services",
+      className: "nav-link",
+    },
+    {
+      label: "Work",
+      link: "#work",
+      helperTitle: "Portfolio",
+      className: "nav-link",
+    },
+    {
+      label: "Email",
+      link: "#contact",
+      helperTitle: "Contact",
+      className: "nav-link",
+    },
   ];
 
   const initActiveBox = useCallback(() => {
@@ -53,13 +78,14 @@ function Navbar({ navOpen }) {
 
   return (
     <nav className={"navbar " + (navOpen ? "active" : "")}>
-      {navItems.map(({ label, link, className }, key) => (
+      {navItems.map(({ label, link, helperTitle, className }, key) => (
         <a
           href={link}
           className={className + " material-symbols-rounded"}
           key={key}
           ref={(el) => (navLinks.current[key] = el)}
           onClick={activeCurrentLink}
+          title={helperTitle}
         >
           {label}
         </a>

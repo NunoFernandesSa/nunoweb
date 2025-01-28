@@ -58,15 +58,17 @@ function Hero() {
             <ButtonPrimary
               href={"/pdf/mon_cv.pdf"}
               primary={true}
-              label={"Dowload CV"}
+              label={"Télécharger CV"}
               icon={"download"}
               target={"_blank"}
+              helperTitle={"Télécharger mon CV"}
             />
 
             <ButtonOutline
               href={"#contact"}
               label={"Contactez-moi"}
               icon="message"
+              helperTitle={"Contactez-moi"}
             />
           </div>
         </div>

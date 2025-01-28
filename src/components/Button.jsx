@@ -11,10 +11,15 @@ import PropTypes from "prop-types";
 /**
  * Primary Button
  */
-const ButtonPrimary = ({ href, target, label, icon, classes }) => {
+const ButtonPrimary = ({ href, target, label, icon, helperTitle, classes }) => {
   if (href) {
     return (
-      <a href={href} target={target} className={`btn btn-primary ${classes} `}>
+      <a
+        href={href}
+        target={target}
+        title={helperTitle}
+        className={`btn btn-primary ${classes} `}
+      >
         {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
@@ -40,10 +45,15 @@ const ButtonPrimary = ({ href, target, label, icon, classes }) => {
 /**
  * Primary Button
  */
-const ButtonOutline = ({ href, target, label, icon, classes }) => {
+const ButtonOutline = ({ href, target, label, icon, helperTitle, classes }) => {
   if (href) {
     return (
-      <a href={href} target={target} className={`btn btn-outline ${classes} `}>
+      <a
+        href={href}
+        target={target}
+        title={helperTitle}
+        className={`btn btn-outline ${classes} `}
+      >
         {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
@@ -74,6 +84,7 @@ ButtonPrimary.propTypes = {
   target: PropTypes.string,
   label: PropTypes.string.isRequired,
   icon: PropTypes.node,
+  helperTitle: PropTypes.string,
   classes: PropTypes.string,
 };
 
@@ -85,6 +96,7 @@ ButtonOutline.propTypes = {
   target: PropTypes.string,
   label: PropTypes.string.isRequired,
   icon: PropTypes.node,
+  helperTitle: PropTypes.string,
   classes: PropTypes.string,
 };
 

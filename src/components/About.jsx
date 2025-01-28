@@ -23,6 +23,7 @@ function About() {
               href="https://www.linkedin.com/in/nunofernandesdesa"
               target="_blank"
               rel="noopener noreferrer"
+              title="Lien vers LinkedIn"
             >
               <img
                 src="/images/social/linkedin.png"
@@ -36,6 +37,7 @@ function About() {
               href="https://www.malt.fr/profile/nunofernandes"
               target="_blank"
               rel="noopener noreferrer"
+              title="Lien vers Malt"
             >
               <img
                 src="/images/social/malt.png"
