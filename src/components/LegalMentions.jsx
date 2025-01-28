@@ -6,7 +6,6 @@
 /**
  * Styles
  */
-import "/src/mentions_legales.style.css";
 
 function LegalMentions() {
   return (

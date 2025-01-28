@@ -4,6 +4,7 @@
  */
 
 import SocialBtn from "./SocialBtn";
+import { Link } from "react-router-dom";
 
 const socials = [
   {
@@ -37,12 +38,12 @@ function Footer() {
 
         {/* mentions legales */}
         <div className="text-center text-zinc-400">
-          <a
-            href="/mentions-legales"
+          <Link
+            to="/mentions-legales"
             className="text-xs hover:underline hover:text-emerald-400"
           >
             Mentions légales
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
