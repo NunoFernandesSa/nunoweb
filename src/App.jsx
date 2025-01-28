@@ -4,9 +4,10 @@
  */
 
 /**
- * Node modules
+ * Node modulesI
  */
 import { ReactLenis } from "lenis/react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 /**
  * Components
@@ -16,11 +17,10 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-// import Review from "./components/Review";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-// import NavbarSide from "./components/NavbarSide";
+import LegalMentions from "./components/LegalMentions";
 
 /**
  * Styles
@@ -29,24 +29,26 @@ import "lenis/dist/lenis.css";
 
 function App() {
   return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MainContent />} />
+        <Route path="mentions-legales/" element={<LegalMentions />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function MainContent() {
+  return (
     <>
       <ReactLenis root>
         <Header />
-
-        {/* --- to do latter */}
-        {/* <div className="fixed flex items-center justify-center right-0 z-50 h-screen me-6">
-        <NavbarSide />
-      </div> */}
-
         <main>
           <Hero />
           <About />
           <Skills />
           <Services />
           <Work />
-          {/* TODO de-comment latter */}
-          {/* <Review /> */}
-
           <Contact />
         </main>
         <Footer />
