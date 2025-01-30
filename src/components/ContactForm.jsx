@@ -61,7 +61,7 @@ function ContactForm() {
         {/* --- name --- */}
         <div className="mb-4">
           <label htmlFor="name" className="label">
-            Name
+            Nom
           </label>
           <input
             type="text"
