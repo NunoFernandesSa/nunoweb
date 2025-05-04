@@ -1,8 +1,28 @@
-# React + Vite
+# ✨ React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with **React.js** to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://fernandes-portfolio.netlify.app]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+✅ **Fully Responsive** – Works on mobile, tablet & desktop  
+✅ **Smooth Animations** – Powered by Framer Motion or CSS  
+✅ **Contact Form** – Integrated with EmailJS or Netlify  
+✅ **SEO Optimized** – Meta tags & performance-focused  
+
+## 🛠️ Technologies Used
+- **Frontend:** React.js
+- **Styling:** TailwindCSS
+- **Animations:** Framer Motion / CSS Transitions
+- **Deployment:** Netlify
+
+## 📦 Installation & Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+   cd your-portfolio
+
+   npm install
+
+   npm start
+  ```
