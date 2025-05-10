@@ -56,7 +56,7 @@ function Hero() {
 
           <div className="flex items-center gap-4">
             <ButtonPrimary
-              href={"/pdf/mon_cv.pdf"}
+              href={"/pdf/mon_cv_.pdf"}
               primary={true}
               label={"Télécharger CV"}
               icon={"download"}
