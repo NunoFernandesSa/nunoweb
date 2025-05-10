@@ -56,14 +56,14 @@ function Skills() {
       desc: "Bibliothèque front-end",
     },
     {
-      imgSrc: "/images/skills/react.png",
-      label: "React Native",
-      desc: "Applications mobiles",
+      imgSrc: "/images/skills/dart-logo-48.png",
+      label: "Dart",
+      desc: "Langage de programmation",
     },
     {
-      imgSrc: "/images/skills/expo.png",
-      label: "Expo",
-      desc: "Écosystème mobile & Outils",
+      imgSrc: "/images/skills/flutter-logo-48.png",
+      label: "Flutter",
+      desc: "Applications mobiles",
     },
   ];
 
