@@ -74,7 +74,7 @@ function Hero() {
         </div>
 
         <div className="hidden lg:block">
-          <figcaption className="w-full max-w-[480px] mx-auto bg-gradient-to-t from-emerald-400 via-28% via-emerald-200 to-75% rounded-[40px] overflow-hidden">
+          <figcaption className="w-full max-w-[480px] mx-auto rounded-[40px] bg-zinc-900/50 overflow-hidden">
             <img
               src="/profile_photo.png"
               alt="Ma phpto de profil"
