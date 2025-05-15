@@ -26,5 +26,7 @@ dist-ssr
 .env
 .env.local
 
-# config directories
-src/config.js/
+
+# config files
+config.js
+/src/config.js
