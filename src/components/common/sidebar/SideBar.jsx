@@ -9,5 +9,5 @@
 import "./sidebar.css";
 
 export default function SideBar() {
-  return <div>asside</div>;
+  return <>asside</>;
 }
