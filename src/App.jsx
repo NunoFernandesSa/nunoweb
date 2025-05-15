@@ -17,10 +17,10 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Footer from "./components/Footer";
+import Footer from "./components/common/Footer";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import LegalMentions from "./components/LegalMentions";
+import LegalMentions from "./components/common/LegalMentions";
 
 /**
  * Styles

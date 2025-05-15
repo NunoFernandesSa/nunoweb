@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import WorkCard from "./WorkCard";
+import WorkCard from "./common/WorkCard";
 
 /**
  * variables

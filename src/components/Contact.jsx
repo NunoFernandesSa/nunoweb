@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import ContactForm from "./ContactForm";
+import ContactForm from "./common/ContactForm";
 
 function Contact() {
   const subtitle =

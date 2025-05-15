@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import SkillCard from "./SkillCard";
+import SkillCard from "./common/SkillCard";
 
 function Skills() {
   const skillItem = [
