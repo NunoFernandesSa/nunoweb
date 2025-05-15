@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import keys from "../config";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,9 +11,9 @@ function ContactForm() {
 
   const [errors, setErrors] = useState({});
 
-  const serviceId = import.meta.env.VITE_EMAILJS_EMAILJS_SERVICE_ID;
-  const templateId = import.meta.env.VITE_EMAILJS_EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAILJS_EMAILJS_USER_ID;
+  const serviceId = keys.serviceId
+  const templateId = keys.templateId
+  const publicKey = keys.userId
 
   const handleChange = (e) => {
     setFormData({
@@ -41,7 +42,7 @@ function ContactForm() {
 
     if (Object.keys(validationErrors).length === 0) {
       // Utiliser l'API EmailJS avec les données échappées
-      emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
+      emailjs.sendForm(serviceId, templateId, e.target, {publicKey: publicKey}).then(
         (result) => {
           console.log(result.text);
           alert("Message envoyé avec succès !");
