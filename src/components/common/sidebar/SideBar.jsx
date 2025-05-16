@@ -47,10 +47,13 @@ export default function SideBar() {
           )}
         </div> */}
 
-        <div>
+        <div className="flex flex-row gap-8">
           {navLinks &&
             navLinks.map((link, index) => (
-              <div key={`nav-link-${index}`} className="my-6">
+              <div
+                key={`nav-link-${index}`}
+                className="p-1 cursor-pointer bg-yellow-300"
+              >
                 <a href={link.href} className="">
                   <span className={link.icon}></span>
                 </a>
