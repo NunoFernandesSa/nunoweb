@@ -31,7 +31,7 @@ export default function App() {
         <Contact />
       </main>
       {/* rigth sidebar */}
-      <aside className="fixed bottom-0 right-0 w-full h-16 flex justify-center items-center bg-red-500">
+      <aside className="fixed top-0 right-0 w-16 h-full flex justify-center items-center bg-blue-400 z-5">
         <SideBar />
       </aside>
     </>

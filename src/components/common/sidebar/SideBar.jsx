@@ -47,13 +47,10 @@ export default function SideBar() {
           )}
         </div> */}
 
-        <div className="flex flex-row gap-8">
+        <div className="flex flex-col items-center justify-center gap-3">
           {navLinks &&
             navLinks.map((link, index) => (
-              <div
-                key={`nav-link-${index}`}
-                className="p-1 cursor-pointer bg-yellow-300"
-              >
+              <div key={`nav-link-${index}`} className="btn">
                 <a href={link.href} className="">
                   <span className={link.icon}></span>
                 </a>

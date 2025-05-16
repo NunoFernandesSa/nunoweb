@@ -45,10 +45,22 @@
   --transition: all 0.4s ease;
 }
 
+/* ===== ===================== ===== */
+/* ===== Responsive typography ===== */
+/* ===== ===================== ===== */
+@media screen and (max-width: 1024px) {
+  :root {
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --small-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
 /* ===== =========== ===== */
 /* ===== Base styles ===== */
 /* ===== =========== ===== */
-
 * {
   margin: 0;
   padding: 0;
@@ -141,7 +153,7 @@ img {
 
 .btn {
   cursor: pointer;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: var(--shadow);
@@ -150,6 +162,15 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-semi-bold);
+}
+
+@keyframes button-push {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .btn:hover {
