@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       {/* main content */}
-      <main className="relative w-[calc(100%-64px)] bg-blue-500">
+      <main className="relative w-[calc(100%-64px)]">
         <Home />
         <About />
         <Services />
