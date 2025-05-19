@@ -9,5 +9,5 @@
 import "./portfolio.css";
 
 export default function Portfolio() {
-  return <div>Portfolio</div>;
+  return <section>Portfolio</section>;
 }

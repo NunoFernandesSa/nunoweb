@@ -9,5 +9,5 @@
 import "./Services.css";
 
 export default function Services() {
-  return <div>Services</div>;
+  return <section>Services</section>;
 }

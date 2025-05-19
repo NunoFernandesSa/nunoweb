@@ -12,8 +12,8 @@ import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
-import SideBar from "./components/common/sidebar/SideBar";
-import Logo from "./components/common/logo/logo";
+import SideBar from "./components/ui/common/sidebar/SideBar";
+import Logo from "./components/ui/common/logo/logo";
 
 /**
  * Styles

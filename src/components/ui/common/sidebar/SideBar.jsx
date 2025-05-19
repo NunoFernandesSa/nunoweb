@@ -13,7 +13,7 @@
  */
 import "./sidebar.css";
 
-import { navLinks } from "../../../utils/navlinks";
+import { navLinks } from "../../../../utils/navlinks";
 
 export default function SideBar() {
   // const [darkMode, setDarkModen] = useState(true);

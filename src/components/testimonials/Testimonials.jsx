@@ -9,5 +9,5 @@
 import "./Testimonials.css";
 
 export default function Testimonials() {
-  return <div>Testimonials</div>;
+  return <section>Testimonials</section>;
 }

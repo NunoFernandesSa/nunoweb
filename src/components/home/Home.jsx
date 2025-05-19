@@ -4,10 +4,24 @@
  */
 
 /**
+ * Components
+ */
+
+/**
  * Style css
  */
 import "./home.css";
 
 export default function Home() {
-  return <div className="w-full h-screen">Home</div>;
+  return (
+    <section className="w-full h-screen flex bg-slate-600">
+      <div className="bg-red-300 w-[50%]">left</div>
+      <div
+        className="bg-blue-300 w-[50%]
+      "
+      >
+        right
+      </div>
+    </section>
+  );
 }
