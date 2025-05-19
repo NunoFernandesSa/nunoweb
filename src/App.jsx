@@ -13,6 +13,7 @@ import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import SideBar from "./components/common/sidebar/SideBar";
+import Logo from "./components/common/logo/logo";
 
 /**
  * Styles
@@ -21,8 +22,13 @@ import SideBar from "./components/common/sidebar/SideBar";
 export default function App() {
   return (
     <>
+      {/* rigth sidebar */}
+      <SideBar />
       {/* main content */}
-      <main className="relative w-[calc(100%-64px)]">
+      <span>
+        <Logo />
+      </span>
+      <main className="">
         <Home />
         <About />
         <Services />
@@ -30,10 +36,6 @@ export default function App() {
         <Testimonials />
         <Contact />
       </main>
-      {/* rigth sidebar */}
-      <aside className="fixed top-0 right-0 w-16 h-full flex justify-center items-center bg-blue-400 z-5">
-        <SideBar />
-      </aside>
     </>
   );
 }

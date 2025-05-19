@@ -17,6 +17,8 @@
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
   --white-color: hsl(0, 0%, 100%);
+  --sidebar-color: hsl(244, 16%, 43%);
+  --sidebar-color-hover: hsl(244, 16%, 33%);
 
   /* ===== fonts & typography ===== */
   /* .5rem = 8px | 1rem = 16px | 1.5rem = 24px */
@@ -153,7 +155,7 @@ img {
 
 .btn {
   cursor: pointer;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: var(--shadow);
@@ -177,3 +179,7 @@ img {
   animation: button-push 0.3s linear 1;
   color: var();
 }
+
+/* ===== ==================== ===== */
+/* ===== Responsicve css ===== */
+/* ===== ==================== ===== */

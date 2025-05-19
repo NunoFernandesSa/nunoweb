@@ -20,44 +20,24 @@ export default function SideBar() {
 
   return (
     <>
-      <div className="sidebar">
-        {/* <div className="my-6">
-          {darkMode ? (
-            <a
-              href="#"
-              className="cursor-pointer p-2 rounded-full"
-              onClick={(e) => {
-                e.preventDefault();
-                setDarkModen((prev) => !prev);
-              }}
-            >
-              <span className="material-symbols-outlined">dark_mode</span>
-            </a>
-          ) : (
-            <a
-              href="#"
-              className="cursor-pointer p-2 rounded-full"
-              onClick={(e) => {
-                e.preventDefault();
-                setDarkModen((prev) => !prev);
-              }}
-            >
-              <span className="material-symbols-outlined">light_mode</span>
-            </a>
-          )}
-        </div> */}
-
-        <div className="flex flex-col items-center justify-center gap-3">
+      <aside className="sidebar">
+        <nav className="sidebar__box">
           {navLinks &&
             navLinks.map((link, index) => (
-              <div key={`nav-link-${index}`} className="btn">
-                <a href={link.href} className="">
-                  <span className={link.icon}></span>
-                </a>
-              </div>
+              <ul key={`nav-link-${index}`} className="">
+                <li className="nav__item">
+                  <a
+                    href={link.href}
+                    className={`sidebar__box__item`}
+                    title={link.label}
+                  >
+                    <span className={link.icon}></span>
+                  </a>
+                </li>
+              </ul>
             ))}
-        </div>
-      </div>
+        </nav>
+      </aside>
     </>
   );
 }
