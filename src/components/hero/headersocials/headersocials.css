@@ -1,0 +1,3 @@
+.center__on__row {
+  @apply flex flex-row justify-center items-center;
+}

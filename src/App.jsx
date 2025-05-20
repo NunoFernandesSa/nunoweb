@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import Home from "./components/home/Home";
+import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
@@ -28,8 +28,8 @@ export default function App() {
       <span>
         <Logo />
       </span>
-      <main className="">
-        <Home />
+      <main className="md:w-[calc(100vw-90px)]">
+        <Hero />
         <About />
         <Services />
         <Portfolio />

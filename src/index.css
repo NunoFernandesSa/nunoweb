@@ -1,7 +1,7 @@
 /* ===== google fonts url cdn ===== */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* ===== tailwind css ===== */
+/* ===== tailwind css config ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,54 +10,12 @@
 /* ===== Variables ===== */
 /* ===== ========= ===== */
 :root {
-  /* ===== colors ===== */
-  /* color mode HSL(hue, saturation, lightness) */
-  --first-color: hsl(231, 69%, 60%);
-  --title-color: hsl(244, 24%, 26%);
-  --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(258, 60%, 98%);
-  --white-color: hsl(0, 0%, 100%);
-  --sidebar-color: hsl(244, 16%, 43%);
-  --sidebar-color-hover: hsl(244, 16%, 33%);
-
-  /* ===== fonts & typography ===== */
-  /* .5rem = 8px | 1rem = 16px | 1.5rem = 24px */
-  --font-body: "Rubik", sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.75rem;
-
-  /* ===== fonts weight ===== */
-  --font-light: 300;
-  --font-normal: 500;
-  --font-medium: 600;
-  --font-semi-bold: 700;
-  --font-bold: 800;
-
   /* ===== box shadow ===== */
   --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
-
   /* ===== border radius ===== */
   --radius: 15px;
-
   /* ===== transition ===== */
   --transition: all 0.4s ease;
-}
-
-/* ===== ===================== ===== */
-/* ===== Responsive typography ===== */
-/* ===== ===================== ===== */
-@media screen and (max-width: 1024px) {
-  :root {
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --small-font-size: 0.938rem;
-    --smaller-font-size: 0.75rem;
-  }
 }
 
 /* ===== =========== ===== */
@@ -119,27 +77,15 @@ img {
 /* ===== reusable css classes ===== */
 /* ===== ==================== ===== */
 .container {
-  max-width: 1080px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
+  @apply max-w-[1080px] px-[15px] mx-auto;
 }
 
 .section {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+  @apply pt-28 pb-8;
 }
 
 .section__title {
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-left: 0.875rem;
-  margin-bottom: 3.75rem;
-  position: relative;
+  @apply relative text-h1FontSsize font-semibold ms-[0.875rem] mb-[3.75rem];
 }
 
 .section__title::before {
@@ -154,16 +100,7 @@ img {
 }
 
 .btn {
-  cursor: pointer;
-  padding: 0.75rem 1rem;
-  line-height: 1;
-  border-radius: 1.875rem;
-  box-shadow: var(--shadow);
-  color: var(--white-color);
-  border: 1px solid transparent;
-  display: inline-block;
-  background-color: var(--first-color);
-  font-weight: var(--font-semi-bold);
+  @apply cursor-pointer px-4 py-3 leading-none rounded-[1.875rem] shadow-[var(--shadow)] text-whiteColor border border-transparent inline-block bg-firstColor font-semibold;
 }
 
 @keyframes button-push {
@@ -179,7 +116,3 @@ img {
   animation: button-push 0.3s linear 1;
   color: var();
 }
-
-/* ===== ==================== ===== */
-/* ===== Responsicve css ===== */
-/* ===== ==================== ===== */

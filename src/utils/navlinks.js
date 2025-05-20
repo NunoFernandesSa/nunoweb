@@ -11,7 +11,7 @@ export const navLinks = [
     id: 'about',
     path: '/about',
     label: 'About',
-    icon: 'icon-user',
+    icon: 'icon-user-following',
     href: '/about',
   },
   {
@@ -25,14 +25,14 @@ export const navLinks = [
     id: 'contact',
     path: '/contact',
     label: 'Contact',
-    icon: 'icon-envelope',
+    icon: 'icon-bubble',
     href: '/contact',
   },
   {
     id: 'blog',
     path: '/blog',
     label: 'Blog',
-    icon: 'icon-book-open',
+    icon: 'icon-note',
     href: '/blog',
   }
 ];

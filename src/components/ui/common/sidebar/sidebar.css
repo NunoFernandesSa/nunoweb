@@ -1,40 +1,16 @@
 .sidebar {
-  position: fixed;
-  top: 0;
-  right: 1rem;
-  width: 64px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply fixed top-0 right-4 w-16 h-full flex justify-center items-center;
 }
-
 .sidebar__box {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: var(--sidebar-color);
-  border-radius: 0.5rem;
+  @apply w-full h-auto flex flex-col items-center justify-center gap-4 py-8 bg-firstColor rounded-lg;
 }
 
-.sidebar .sidebar__box .sidebar__box__item {
-  cursor: pointer;
-  color: var(--white-color);
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out;
-  padding: 0.75rem;
+.sidebar__nav__link {
+  @apply cursor-pointer text-whiteColor text-base p-3 transition-all duration-300 ease-in-out;
 }
-.sidebar .sidebar__box .sidebar__box__item:hover,
-.sidebar .sidebar__box.sidebar__box__item .active {
-  transition: all 0.3s ease-in-out;
-  background-color: var(--sidebar-color-hover);
-  border-radius: 0.5rem;
+.sidebar__nav__link:hover,
+.active {
+  @apply bg-sidebarColorHover rounded-lg transition-all duration-300 ease-in-out;
 }
 
 /* ===== ==================== ===== */
@@ -50,7 +26,7 @@
     width: auto;
     height: 36px;
   }
-  .sidebar .sidebar__box {
+  .sidebar__box {
     flex-direction: row;
     padding: 1rem;
     border-radius: 0;

@@ -25,10 +25,12 @@ export default function SideBar() {
           {navLinks &&
             navLinks.map((link, index) => (
               <ul key={`nav-link-${index}`} className="">
-                <li className="nav__item">
+                <li className="">
                   <a
                     href={link.href}
-                    className={`sidebar__box__item`}
+                    className={`sidebar__nav__link ${
+                      link.isActive && "active"
+                    }`}
                     title={link.label}
                   >
                     <span className={link.icon}></span>
