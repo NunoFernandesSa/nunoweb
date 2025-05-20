@@ -13,7 +13,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Web Development",
+    title: "Ux/UI Design",
     description: "Create stunning websites that captivate your audience.",
     image: "",
   },

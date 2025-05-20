@@ -1,3 +1,25 @@
 .service__card {
-  @apply flex flex-wrap flex-col items-center justify-center p-6 rounded-lg shadow-md bg-white text-center;
+  @apply flex flex-wrap flex-col items-center justify-center p-6 gap-6 rounded-[var(--radius)] shadow-md text-center transition-all duration-300 ease-in-out;
+}
+
+.service__card:hover {
+  @apply -translate-y-[5px];
+}
+
+.service__card:nth-child(1) {
+  @apply bg-[rgb(108,108,229)] shadow-[0_0_10px_rgb(108,108,229)] text-white;
+}
+.service__card:nth-child(2) {
+  @apply bg-[rgb(233,199,76)] shadow-[0_0_10px_rgba(233,199,76)] text-white;
+}
+.service__card:nth-child(3) {
+  @apply bg-[rgb(249,123,139)] shadow-[0_0_10px_rgb(108,108,229)] text-white;
+}
+
+.service__title {
+  @apply text-h2FontSize;
+}
+
+.service__description {
+  @apply text-sm;
 }
