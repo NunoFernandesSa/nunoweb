@@ -1,0 +1,3 @@
+.services__container {
+  @apply grid gap-8 md:grid-cols-3 grid-cols-1;
+}
