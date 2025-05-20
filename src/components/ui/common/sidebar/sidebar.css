@@ -1,5 +1,5 @@
 .sidebar {
-  @apply fixed top-0 right-4 w-16 h-full flex justify-center items-center;
+  @apply fixed top-0 right-4 w-16 h-full flex justify-center items-center z-50;
 }
 .sidebar__box {
   @apply w-full h-auto flex flex-col items-center justify-center gap-2 md:gap-8 py-8 bg-accent rounded-lg;
