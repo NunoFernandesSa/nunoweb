@@ -6,6 +6,7 @@
 /**
  * Components
  */
+import Button from "../ui/common/button/Button";
 import HeaderSocials from "./headerSocials/HeaderSocials";
 
 /**
@@ -35,20 +36,14 @@ export default function Hero() {
 
         <HeaderSocials />
 
-        <h2 className="font-bold text-titleColor text-2xl mb-6 mt-6">
-          Nuno Fernandes
-        </h2>
-        <h1 className="font-bold text-titleColor text-4xl mb-6">
-          Développeur Full Stack
-        </h1>
-        <h3 className="hero__subtitle mb-3 text-textCcolor">
+        <h2 className="hero__my__name">Nuno Fernandes</h2>
+        <h1 className="hero__title">Développeur Full Stack</h1>
+        <h3 className="hero__subtitle">
           Développement d&apos;applications innovantes et flexibles pour
           répondre aux besoins de demain.
         </h3>
 
-        <a className="btn mt-6" href="#contact">
-          Hire me
-        </a>
+        <Button classes={"btn mt-3"} href={"#contact"} btnText={"Hire me"} />
       </div>
     </section>
   );

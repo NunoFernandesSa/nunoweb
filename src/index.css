@@ -35,42 +35,33 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--font-body);
-  font-size: var(--font-size);
+  font-family: "rubik", sans-serif;
 }
 
 body {
-  font-optical-sizing: auto;
-  background-color: var(--body-color);
-  line-height: 1.7;
+  @apply bg-bodyColor leading-[1.7];
 }
 
 h1,
 h2,
 h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-  line-height: 1.2;
+  @apply text-titleColor font-semibold leading-[1.2];
 }
 
 ul {
-  list-style: none;
+  @apply list-none;
 }
 
 a {
-  text-decoration: none;
+  @apply no-underline;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  outline: none;
+  @apply cursor-pointer border-none outline-none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+  @apply max-w-full h-auto align-middle;
 }
 
 /* ===== ==================== ===== */
@@ -85,7 +76,7 @@ img {
 }
 
 .section__title {
-  @apply relative text-h1FontSsize font-semibold ms-[0.875rem] mb-[3.75rem];
+  @apply relative text-h1FontSize font-semibold ms-[0.875rem] mb-[3.75rem];
 }
 
 .section__title::before {

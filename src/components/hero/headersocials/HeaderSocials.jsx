@@ -15,16 +15,8 @@ export default function HeaderSocials() {
   return (
     <>
       <ul className="center__on__row gap-6">
-        <li className="btn">
-          <a href="" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li className="btn">
-          <a href="" target="_blank">
-            malt
-          </a>
-        </li>
+        <li className="btn">{/* TODO */}</li>
+        <li className="btn">{/* TODO */}</li>
       </ul>
     </>
   );

@@ -19,7 +19,7 @@ export default {
       },
       fontSize: {
         biggestFontSize: "2.25rem",
-        h1FontSsize: "1.5rem",
+        h1FontSize: "1.5rem",
         h2FontSize: "1.25rem",
         h3FontSize: "1rem",
         smallFontSize: "0.875rem",
