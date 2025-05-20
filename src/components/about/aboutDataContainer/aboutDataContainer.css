@@ -1,5 +1,17 @@
 .about__data {
-  @apply p-8 bg-surface rounded-[var(--radius)];
+  @apply p-8 bg-surface rounded-[var(--radius)] relative;
+}
+.about__data::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 20%;
+  left: -0.93rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #fff;
 }
 
 .about__data__shadow {
@@ -12,4 +24,13 @@
 
 .about__buttons__section {
   @apply flex flex-col md:flex-row gap-3 justify-between items-center;
+}
+
+/* ==================================== */
+/* ===== responsive (Media Query) ===== */
+/* ==================================== */
+@media screen and (max-width: 768px) {
+  .about__data::before {
+    display: none;
+  }
 }
