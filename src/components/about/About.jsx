@@ -27,10 +27,10 @@ import { skills } from "./../../utils/skills";
 export default function About() {
   return (
     <section id="about" className="container section w-full h-screen">
+      {/* ===== title ===== */}
       <h2 className="section__title text-center md:text-start">About me</h2>
-      {/* ================== */}
+
       {/* ===== Image ===== */}
-      {/* ================== */}
       <div className="about__container">
         <img
           src={profile_photo}
@@ -42,9 +42,7 @@ export default function About() {
         <AboutDataContainer />
       </div>
 
-      {/* ================== */}
       {/* ===== Skills ===== */}
-      {/* ================== */}
       <div className="skills__data my-16">
         <h3 className="my-6 text-center md:text-start">
           Outils et technoqlogies essentiels que j&apos;utilise
