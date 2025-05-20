@@ -1,9 +1,9 @@
 .hero__my__name {
-  @apply font-semibold text-textPrimary text-h1FontSize mb-6 mt-6;
+  @apply font-bold text-textPrimary text-h1FontSize mb-6 mt-6;
 }
 
 .hero__title {
-  @apply font-bold text-textPrimary text-h1FontSize mb-6;
+  @apply font-normal text-h1FontSize text-textPrimary mb-6;
 }
 
 .hero__subtitle {
