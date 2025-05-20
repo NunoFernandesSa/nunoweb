@@ -1,11 +1,11 @@
 .hero__my__name {
-  @apply font-semibold text-titleColor text-h1FontSize mb-6 mt-6;
+  @apply font-semibold text-textPrimary text-h1FontSize mb-6 mt-6;
 }
 
 .hero__title {
-  @apply font-bold text-titleColor text-h1FontSize mb-6;
+  @apply font-bold text-textPrimary text-h1FontSize mb-6;
 }
 
 .hero__subtitle {
-  @apply mb-3 text-textCcolor;
+  @apply font-normal mb-3;
 }

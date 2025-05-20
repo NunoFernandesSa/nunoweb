@@ -10,12 +10,13 @@ export default {
         sans: ["Rubik", "sans-serif"],
       },
       colors: {
-        firstColor: "#595c74",
-        titleColor: "#353953",
-        textCcolor: "#595c74",
-        bodyColor: "#f6f5ff",
-        whiteColor: "#ffffff",
-        sidebarColorHover: "#434557",
+        primary: "#4A5568", // Modern slate blue-gray
+        secondary: "#718096", // Lighter blue-gray
+        accent: "#3B82F6", // Vibrant blue
+        textPrimary: "#2D3748", // Dark blue-gray for text
+        background: "#F7FAFC", // Light cool gray background
+        surface: "#FFFFFF", // Pure white
+        hover: "#2C5282", // Deep blue for hover states
       },
       fontSize: {
         biggestFontSize: "2.25rem",

@@ -39,13 +39,13 @@ textarea {
 }
 
 body {
-  @apply bg-bodyColor leading-[1.7];
+  @apply bg-surface leading-[1.7];
 }
 
 h1,
 h2,
 h3 {
-  @apply text-titleColor font-semibold leading-[1.2];
+  @apply text-textPrimary font-semibold leading-[1.2];
 }
 
 ul {
@@ -91,7 +91,7 @@ img {
 }
 
 .btn {
-  @apply cursor-pointer px-4 py-3 leading-none rounded-[1.875rem] shadow-[var(--shadow)] text-whiteColor border border-transparent inline-block bg-firstColor font-semibold;
+  @apply cursor-pointer px-4 py-3 leading-none rounded-[1.875rem] shadow-[var(--shadow)] text-surface border border-transparent inline-block bg-accent font-semibold;
 }
 
 @keyframes button-push {
