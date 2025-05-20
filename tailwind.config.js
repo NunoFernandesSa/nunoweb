@@ -10,12 +10,12 @@ export default {
         sans: ["Rubik", "sans-serif"],
       },
       colors: {
-        firstColor: "rgb(89, 92, 116)",
-        titleColor: "rgb(53, 57, 83)",
-        textCcolor: "rgb(89, 92, 116)",
-        bodyColor: "rgb(246, 245, 255)",
-        whiteColor: "rgb(255, 255, 255)",
-        sidebarColorHover: "rgb(67, 69, 87)",
+        firstColor: "#595c74",
+        titleColor: "#353953",
+        textCcolor: "#595c74",
+        bodyColor: "#f6f5ff",
+        whiteColor: "#ffffff",
+        sidebarColorHover: "#434557",
       },
       fontSize: {
         biggestFontSize: "2.25rem",
