@@ -10,7 +10,7 @@ import "./Services.css";
 
 export default function Services() {
   return (
-    <section id="services" className="w-full h-screen bg-red-700">
+    <section id="services" className="section__size bg-red-700">
       Services
     </section>
   );

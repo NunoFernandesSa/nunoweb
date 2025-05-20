@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="h-[100vh] w-full flex flex-col justify-center items-center"
+      className="section__size flex flex-col justify-center items-center"
     >
       <div className="flex justify-center items-center flex-col flex-wrap p-6 lg:p-0 text-center">
         <div className="">

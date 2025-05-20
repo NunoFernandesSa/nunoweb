@@ -9,5 +9,9 @@
 import "./Contact.css";
 
 export default function Contact() {
-  return <section>Contact</section>;
+  return (
+    <section id="contact" className="section__size">
+      Contact
+    </section>
+  );
 }

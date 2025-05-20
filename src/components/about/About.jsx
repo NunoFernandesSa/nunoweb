@@ -26,7 +26,7 @@ import { skills } from "./../../utils/skills";
 
 export default function About() {
   return (
-    <section id="about" className="container section w-full h-screen">
+    <section id="about" className="container section section__size">
       {/* ===== title ===== */}
       <h2 className="section__title text-center md:text-start">About me</h2>
 

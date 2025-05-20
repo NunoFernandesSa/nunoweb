@@ -4,7 +4,7 @@ export const navLinks = [
     path: "/",
     label: "Home",
     icon: "icon-home",
-    href: "/",
+    href: "#home",
     isActive: true,
   },
   {

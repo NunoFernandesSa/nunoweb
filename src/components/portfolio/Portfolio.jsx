@@ -9,5 +9,9 @@
 import "./portfolio.css";
 
 export default function Portfolio() {
-  return <section>Portfolio</section>;
+  return (
+    <section id="projects" className="section__size">
+      Portfolio
+    </section>
+  );
 }

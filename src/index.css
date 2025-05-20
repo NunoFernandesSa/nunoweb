@@ -67,6 +67,11 @@ img {
 /* ===== ==================== ===== */
 /* ===== reusable css classes ===== */
 /* ===== ==================== ===== */
+
+.section__size {
+  @apply w-full h-screen;
+}
+
 .container {
   @apply max-w-[1080px] px-[15px] mx-auto;
 }
