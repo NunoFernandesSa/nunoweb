@@ -11,7 +11,7 @@
 /* ===== ========= ===== */
 :root {
   /* ===== box shadow ===== */
-  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+  --shadow: 0px 5px 20px 0px rgb(113 128 150 / 50%);
   /* ===== border radius ===== */
   --radius: 15px;
   /* ===== transition ===== */
@@ -39,7 +39,7 @@ textarea {
 }
 
 body {
-  @apply bg-surface leading-[1.7];
+  @apply bg-background leading-[1.7];
 }
 
 h1,
@@ -76,7 +76,7 @@ img {
 }
 
 .section__title {
-  @apply relative text-h1FontSize font-semibold ms-[0.875rem] mb-[3.75rem];
+  @apply relative text-biggestFontSize font-semibold ms-[0.875rem] mb-[3.75rem];
 }
 
 .section__title::before {
@@ -91,7 +91,7 @@ img {
 }
 
 .btn {
-  @apply cursor-pointer px-4 py-3 leading-none rounded-[1.875rem] shadow-[var(--shadow)] text-surface border border-transparent inline-block bg-accent font-semibold;
+  @apply cursor-pointer px-6 py-3 leading-none rounded-[1.875rem] shadow-[var(--shadow)] text-surface border border-transparent inline-block bg-accent font-semibold;
 }
 
 @keyframes button-push {

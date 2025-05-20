@@ -14,7 +14,7 @@ export default {
         secondary: "#718096", // Lighter blue-gray
         accent: "#3B82F6", // Vibrant blue
         textPrimary: "#2D3748", // Dark blue-gray for text
-        background: "#F7FAFC", // Light cool gray background
+        background: "#EDF2F7", // Light cool gray background
         surface: "#FFFFFF", // Pure white
         hover: "#2C5282", // Deep blue for hover states
       },
