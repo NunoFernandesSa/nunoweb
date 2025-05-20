@@ -9,5 +9,9 @@
 import "./Services.css";
 
 export default function Services() {
-  return <section>Services</section>;
+  return (
+    <section id="services" className="w-full h-screen bg-red-700">
+      Services
+    </section>
+  );
 }

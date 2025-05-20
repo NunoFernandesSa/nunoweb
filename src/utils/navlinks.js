@@ -15,6 +15,13 @@ export const navLinks = [
     href: "#about",
   },
   {
+    id: "services",
+    path: "/services",
+    label: "Services",
+    icon: "icon-layers",
+    href: "#services",
+  },
+  {
     id: "projects",
     path: "/projects",
     label: "Projects",
