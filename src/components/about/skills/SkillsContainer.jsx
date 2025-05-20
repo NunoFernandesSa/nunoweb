@@ -17,7 +17,7 @@ export default function SkillsContainer({ key, icon, label, className }) {
   return (
     <div
       key={key}
-      className={`bg-surface shadow-lg w-auto rounded-md flex justify-start items-center py-2 px-3 gap-2 ${className}`}
+      className={`bg-surface shadow-lg w-full sm:w-auto rounded-md flex justify-start items-center py-2 px-3 gap-2 ${className}`}
     >
       <img src={icon} className="skill__logo w-10 h-full" />
       <div className="skills__box">

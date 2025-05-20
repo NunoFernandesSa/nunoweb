@@ -4,11 +4,6 @@
  */
 
 /**
- * node modules
- */
-// import { useState } from "react";
-
-/**
  * Style css
  */
 import "./sidebar.css";
@@ -16,8 +11,6 @@ import "./sidebar.css";
 import { navLinks } from "../../../../utils/navlinks";
 
 export default function SideBar() {
-  // const [darkMode, setDarkModen] = useState(true);
-
   return (
     <>
       <aside className="sidebar">
@@ -32,6 +25,13 @@ export default function SideBar() {
                       link.isActive && "active"
                     }`}
                     title={link.label}
+                    onClick={(e) => {
+                      const links = document.querySelectorAll(
+                        ".sidebar__nav__link"
+                      );
+                      links.forEach((link) => link.classList.remove("active"));
+                      e.currentTarget.classList.add("active");
+                    }}
                   >
                     <span className={link.icon}></span>
                   </a>
