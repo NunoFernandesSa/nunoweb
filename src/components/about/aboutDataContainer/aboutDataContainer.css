@@ -1,0 +1,15 @@
+.about__data {
+  @apply p-8 bg-surface rounded-[var(--radius)];
+}
+
+.about__data__shadow {
+  box-shadow: var(--shadow);
+}
+
+.about__description {
+  @apply text-sm mb-3 md:mb-6;
+}
+
+.about__buttons__section {
+  @apply flex flex-col md:flex-row gap-3 justify-between items-center;
+}

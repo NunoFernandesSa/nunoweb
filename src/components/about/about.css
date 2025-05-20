@@ -1,11 +1,3 @@
 .about__container {
-  @apply grid grid-cols-[3fr_9fr] gap-8;
-}
-
-.about__data {
-  @apply p-8 bg-surface rounded-[var(--radius)];
-}
-
-.about__data__shadow {
-  box-shadow: var(--shadow);
+  @apply grid md:grid-cols-[3fr_9fr] grid-cols-[12fr] gap-8 justify-center items-center;
 }

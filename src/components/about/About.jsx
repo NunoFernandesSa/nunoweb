@@ -16,37 +16,49 @@ import profile_photo from "/profile_photo.png";
 /**
  * Components
  */
-import Button from "./../ui/common/button/Button";
+import SkillsContainer from "./skills/SkillsContainer";
+import AboutDataContainer from "./aboutDataContainer/AboutDataContainer";
+
+/**
+ * Data
+ */
+import { skills } from "./../../utils/skills";
 
 export default function About() {
   return (
-    <section id="about" className="about container section w-full h-screen">
-      <h2 className="section__title">About me</h2>
-
-      <div className="about__container grid">
+    <section id="about" className="container section w-full h-screen">
+      <h2 className="section__title text-center md:text-start">About me</h2>
+      {/* ================== */}
+      {/* ===== Image ===== */}
+      {/* ================== */}
+      <div className="about__container">
         <img
           src={profile_photo}
           alt="Ma photo de profil"
           width={240}
           height={240}
-          className="rounded-full p-2 border-4 mb-6 border-accent bg-primary"
+          className="rounded-full p-2 border-4 border-accent bg-primary mx-auto hidden md:block"
         />
+        <AboutDataContainer />
+      </div>
 
-        <div className="about__data about__data__shadow grid">
-          <div className="about__info">
-            <p className="about__description">
-              Je suis Nuno, développeur Web et mobile enthousiaste, avec une
-              riche expérience dans la conception de sites Web, applications web
-              et applications mobile. Je suis constamment à l’affût des
-              dernières technologies et tendances du secteur, cherchant à
-              améliorer continuellement mes compétences et à repousser les
-              limites de la créativité. Mon objectif est de transformer des
-              idées en réalités numériques, en veillant à ce que chaque projet
-              soit esthétiquement agréable.
-            </p>
-
-            <Button classes={"btn"} btnText={"Dowload CV"} />
-          </div>
+      {/* ================== */}
+      {/* ===== Skills ===== */}
+      {/* ================== */}
+      <div className="skills__data my-16">
+        <h3 className="my-6 text-center md:text-start">
+          Outils et technoqlogies essentiels que j&apos;utilise
+        </h3>
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
+          {skills.map((skill, index) => {
+            return (
+              <SkillsContainer
+                key={index}
+                icon={skill.icon}
+                label={skill.label}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
