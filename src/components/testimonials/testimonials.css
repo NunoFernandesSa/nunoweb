@@ -1,0 +1,19 @@
+.testimonials__container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.testimonials__content {
+  @apply flex flex-col justify-center items-center text-center p-6 border-4 border-dashed border-secondary mb-6 rounded-lg shadow-md;
+}
+
+.testimonial__author {
+  @apply flex flex-row justify-start items-center text-start gap-4 mb-3;
+}
+
+.testomonial__subtitle {
+  @apply text-[#8b88b1] text-sm;
+}
+
+.comment {
+  @apply text-sm italic;
+}
