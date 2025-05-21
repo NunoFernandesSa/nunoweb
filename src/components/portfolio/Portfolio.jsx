@@ -20,10 +20,10 @@ export default function Portfolio() {
   return (
     <section id="projects" className="container section section__size">
       <h2 className="section__title">Recent works</h2>
-      <p className="text-textPrimary mb-6">
-        Explorez une sélection de projets qui illustrent mon travail et mon
-        expertise en développement.
-      </p>
+
+      <div className="section__subtitle">
+        <p></p>
+      </div>
 
       <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))] mx-auto max-w-6xl justify-center">
         {works.map((item, index) => (

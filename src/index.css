@@ -84,6 +84,10 @@ img {
   @apply relative text-h1FontSize lg:text-biggestFontSize font-semibold ms-[0.875rem] mb-[3.75rem] underline underline-offset-4 decoration-accent;
 }
 
+.section__subtitle {
+  @apply mb-6 text-center md:text-start font-semibold text-sm md:text-base;
+}
+
 .section__title::before {
   content: "";
   position: absolute;

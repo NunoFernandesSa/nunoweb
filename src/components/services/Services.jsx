@@ -21,6 +21,16 @@ export default function Services() {
       className="section container section__size flex flex-col justify-center"
     >
       <h2 className="section__title">What I Do</h2>
+      <div className="section__subtitle">
+        <p>
+          I build and maintain high-performance websites & mobile apps—secure,
+          scalable, and tailored to your goals.
+        </p>
+        <p>
+          From concept to long-term support, let’s make your digital vision a
+          reality.
+        </p>
+      </div>
 
       <div className="services__container">
         {services &&

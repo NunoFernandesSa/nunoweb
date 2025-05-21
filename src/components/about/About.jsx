@@ -44,7 +44,7 @@ export default function About() {
 
       {/* ===== Skills ===== */}
       <div className="skills__data my-16">
-        <div className="mb-6 text-center md:text-start font-semibold text-sm md:text-md">
+        <div className="section__subtitle">
           <p>
             I expertly wield cutting-edge technologies to build high-performance
             solutions across the full development lifecycle.
