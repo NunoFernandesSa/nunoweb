@@ -16,10 +16,7 @@ import { services } from "../../utils/services";
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="section container section__size flex flex-col justify-center"
-    >
+    <section id="services" className="section container section__size">
       <h2 className="section__title">What I Do</h2>
       <div className="section__subtitle">
         <p>
