@@ -12,7 +12,7 @@ import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
-import Blog from "./components/blog/Blog";
+// import Blog from "./components/blog/Blog";
 import SideBar from "./components/ui/common/sidebar/SideBar";
 import Logo from "./components/ui/common/logo/logo";
 import Footer from "./components/ui/common/footer/Footer";
@@ -37,7 +37,7 @@ export default function App() {
         <Portfolio />
         <Testimonials />
         <Contact />
-        <Blog />
+        {/* <Blog /> */}
       </main>
 
       <Footer />
