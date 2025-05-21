@@ -9,5 +9,9 @@
 import "./Testimonials.css";
 
 export default function Testimonials() {
-  return <section>Testimonials</section>;
+  return (
+    <section id="testimonials" className="section__size section container">
+      <h2 className="section__title">Testimonials</h2>
+    </section>
+  );
 }

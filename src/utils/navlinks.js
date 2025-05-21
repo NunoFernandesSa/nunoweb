@@ -33,13 +33,13 @@ export const navLinks = [
     path: "/contact",
     label: "Contact",
     icon: "icon-bubble",
-    href: "#contact",
+    href: "#testimonials",
   },
   {
-    id: "blog",
-    path: "/blog",
-    label: "Blog",
+    id: "contact",
+    path: "/contact",
+    label: "Contact",
     icon: "icon-note",
-    href: "#blog",
+    href: "#contact",
   },
 ];

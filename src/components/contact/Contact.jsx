@@ -10,8 +10,8 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className="section__size">
-      Contact
+    <section id="contact" className="section__size section container">
+      <h2 className="section__title">Contact</h2>
     </section>
   );
 }
