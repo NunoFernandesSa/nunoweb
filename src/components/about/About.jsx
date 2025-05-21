@@ -44,9 +44,16 @@ export default function About() {
 
       {/* ===== Skills ===== */}
       <div className="skills__data my-16">
-        <h3 className="my-6 text-center md:text-start">
-          Outils et technoqlogies essentiels que j&apos;utilise
-        </h3>
+        <div className="mb-6 text-center md:text-start font-semibold text-sm md:text-md">
+          <p>
+            I expertly wield cutting-edge technologies to build high-performance
+            solutions across the full development lifecycle.
+          </p>
+          <p>
+            By continuously adopting the latest industry innovations, I create
+            scalable systems ready for future challenges.
+          </p>
+        </div>
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
           {skills.map((skill, index) => {
             return (
