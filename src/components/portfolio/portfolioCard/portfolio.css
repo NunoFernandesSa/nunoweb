@@ -1,5 +1,5 @@
 .portfolio__card {
-  @apply p-4 rounded-2xl bg-white ring-1 ring-inset hover:bg-accent transition-all duration-500 ease-in-out hover:text-white cursor-pointer;
+  @apply p-4 rounded-2xl bg-white ring-1 ring-inset hover:bg-accent/5 transition-all duration-500 ease-in-out cursor-pointer shadow-md;
 }
 
 .portfolio__figure {
