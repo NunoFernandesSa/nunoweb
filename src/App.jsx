@@ -15,6 +15,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Blog from "./components/blog/Blog";
 import SideBar from "./components/ui/common/sidebar/SideBar";
 import Logo from "./components/ui/common/logo/logo";
+import Footer from "./components/ui/common/footer/Footer";
 
 /**
  * Styles
@@ -38,6 +39,8 @@ export default function App() {
         <Contact />
         <Blog />
       </main>
+
+      <Footer />
     </>
   );
 }

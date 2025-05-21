@@ -9,5 +9,13 @@
 import "./Footer.css";
 
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <footer className="w-full h-16 flex flex-wrap justify-between items-center px-3 md:px-20 text-xs mb-20 md:mb-0">
+      <div className="w-full md:w-auto">&copy; 2025 nunofernandes-dev.com</div>
+      <div className="w-full md:w-auto"></div>
+      <a href="" className="hover:text-hover">
+        RGPD
+      </a>
+    </footer>
+  );
 }
