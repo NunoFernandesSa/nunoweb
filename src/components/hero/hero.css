@@ -1,11 +1,15 @@
 .hero__my__name {
-  @apply font-bold text-textPrimary text-h1FontSize mb-6 mt-6;
+  @apply text-h1FontSize text-primary mt-6;
 }
 
 .hero__title {
-  @apply font-normal text-h1FontSize text-textPrimary mb-6;
+  @apply text-primary my-3;
 }
 
 .hero__subtitle {
-  @apply font-normal mb-3;
+  @apply text-h2FontSize;
+}
+.hero__subtitle,
+.hero__text {
+  @apply font-normal text-primary mb-3;
 }

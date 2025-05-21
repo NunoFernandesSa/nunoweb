@@ -39,11 +39,11 @@ export default function Hero() {
         <HeaderSocials />
 
         <h2 className="hero__my__name">Nuno Fernandes</h2>
-        {/* <h1 className="hero__title">Développeur Full Stack</h1> */}
-        <h1 className="hero__title">Développeur Full Stack</h1>
-        <h3 className="hero__subtitle">
-          Développement d&apos;applications innovantes et flexibles pour
-          répondre aux besoins de demain.
+        <h1 className="hero__title section__title ">Full Stack Developer</h1>
+        <h2 className="hero__subtitle">🚀 Full Stack, Full Impact</h2>
+        <h3 className="hero__text">
+          Building future-ready applications with innovation and flexibility at
+          their core.
         </h3>
 
         <Button classes={"btn mt-3"} href={"#contact"} btnText={"Hire me"} />
