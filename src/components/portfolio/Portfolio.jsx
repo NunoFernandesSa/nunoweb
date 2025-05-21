@@ -25,7 +25,7 @@ export default function Portfolio() {
         expertise en développement.
       </p>
 
-      <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+      <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))] mx-auto max-w-6xl justify-center">
         {works.map((item, index) => (
           <PortfolioCard
             key={index}

@@ -81,7 +81,7 @@ img {
 }
 
 .section__title {
-  @apply relative text-biggestFontSize font-semibold ms-[0.875rem] mb-[3.75rem] underline underline-offset-4 decoration-accent;
+  @apply relative text-h1FontSize lg:text-biggestFontSize font-semibold ms-[0.875rem] mb-[3.75rem] underline underline-offset-4 decoration-accent;
 }
 
 .section__title::before {
