@@ -1,0 +1,21 @@
+.portfolio__card {
+  @apply p-4 rounded-2xl bg-white ring-1 ring-inset hover:bg-accent transition-all duration-500 ease-in-out hover:text-white cursor-pointer;
+}
+
+.portfolio__figure {
+  @apply aspect-auto rounded-lg mb-4;
+}
+.portfolio__figure img {
+  @apply rounded-lg;
+}
+
+.portfolio__text__container {
+  @apply flex flex-col justify-center;
+}
+.portfolio__title {
+  @apply mb-3 text-h2FontSize;
+}
+
+.portfolio__tags {
+  @apply py-1 px-2 rounded-md font-semibold italic;
+}

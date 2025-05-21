@@ -13,9 +13,9 @@ import PropTypes from "prop-types";
  */
 import "./serviceCard.css";
 
-export default function ServiceCard({ id, image, title, description }) {
+export default function ServiceCard({ image, title, description }) {
   return (
-    <div className="service__card" key={id}>
+    <div className="service__card">
       <img src={image} alt={title} />
       <div className="flex flex-col gap-6">
         <h2 className="service__title">{title}</h2>
@@ -27,7 +27,6 @@ export default function ServiceCard({ id, image, title, description }) {
 
 // propTypes
 ServiceCard.propTypes = {
-  id: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,

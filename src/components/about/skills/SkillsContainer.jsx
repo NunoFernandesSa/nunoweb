@@ -13,10 +13,9 @@ import PropTypes from "prop-types";
  */
 import "./skillsContainer.css";
 
-export default function SkillsContainer({ key, icon, label, className }) {
+export default function SkillsContainer({ icon, label, className }) {
   return (
     <div
-      key={key}
       className={`bg-surface shadow-lg w-full sm:w-auto rounded-md flex justify-start items-center py-2 px-3 gap-2 ${className}`}
     >
       <img src={icon} className="skill__logo w-10 h-full" />
@@ -28,7 +27,6 @@ export default function SkillsContainer({ key, icon, label, className }) {
 }
 
 SkillsContainer.propTypes = {
-  key: PropTypes.number,
   icon: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   className: PropTypes.string,

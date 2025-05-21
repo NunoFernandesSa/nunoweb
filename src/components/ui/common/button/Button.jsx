@@ -24,5 +24,5 @@ export default function Button({ classes, href, btnText }) {
 Button.propTypes = {
   classes: PropTypes.string,
   btnText: PropTypes.string,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
