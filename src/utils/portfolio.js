@@ -1,4 +1,4 @@
-export const portfolio = [
+export const works = [
   {
     imageLink: "/images/works/gracoeiro.png",
     title: "www.gracoeiro.com",

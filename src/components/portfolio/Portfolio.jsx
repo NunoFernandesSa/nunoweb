@@ -12,9 +12,11 @@ import PortfolioCard from "./portfolioCard/PortfolioCard";
 /**
  * data
  */
-import { portfolio } from "../../utils/portfolio";
+import { works } from "../../utils/portfolio";
 
 export default function Portfolio() {
+  console.log(works.tag);
+
   return (
     <section id="projects" className="container section section__size">
       <h2 className="section__title">Recent works</h2>
@@ -24,15 +26,16 @@ export default function Portfolio() {
       </p>
 
       <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
-        {portfolio.map((item) => {
+        {works.map((item, index) => (
           <PortfolioCard
-            key={item.title}
+            key={index}
             link={item.link}
             imgLink={item.imageLink}
             title={item.title}
             description={item.description}
-          />;
-        })}
+            tags={item.tag}
+          />
+        ))}
       </div>
     </section>
   );

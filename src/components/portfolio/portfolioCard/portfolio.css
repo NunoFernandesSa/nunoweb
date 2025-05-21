@@ -17,5 +17,5 @@
 }
 
 .portfolio__tags {
-  @apply py-1 px-2 rounded-md font-semibold italic;
+  @apply py-1 px-2 rounded-md text-sm italic bg-gray-300 text-primary;
 }

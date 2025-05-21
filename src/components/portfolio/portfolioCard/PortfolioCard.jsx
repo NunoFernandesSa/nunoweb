@@ -13,19 +13,29 @@ import PropTypes from "prop-types";
  */
 import "./portfolio.css";
 
-export default function PortfolioCard({ link, imgLink, title, description }) {
+export default function PortfolioCard({
+  link,
+  imgLink,
+  title,
+  description,
+  tags,
+}) {
   return (
     <a href={link} target="_blank">
       <div className="portfolio__card">
         <figure className="portfolio__figure">
-          <img src={imgLink} alt="" />
+          <img src={imgLink} alt={title} />
         </figure>
 
         <div className="portfolio__text__container">
           <h2 className="portfolio__title">{title}</h2>
           <p className="text-sm mb-3">{description}</p>
           <div className="flex flex-wrap items-center gap-2">
-            <span className="portfolio__tags"></span>
+            {tags.map((tag, tagIndex) => (
+              <span key={tagIndex} className="portfolio__tags">
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </div>
@@ -34,8 +44,9 @@ export default function PortfolioCard({ link, imgLink, title, description }) {
 }
 
 PortfolioCard.propTypes = {
-  link: PropTypes.string.isRequired,
-  imgLink: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  imgLink: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
 };
