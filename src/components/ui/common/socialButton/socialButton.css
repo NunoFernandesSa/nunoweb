@@ -1,0 +1,3 @@
+.social__logo__button {
+  @apply shadow-md p-2 rounded-md bg-white hover:scale-105 ease-in-out duration-300;
+}
