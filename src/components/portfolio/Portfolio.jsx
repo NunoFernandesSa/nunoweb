@@ -15,8 +15,6 @@ import PortfolioCard from "./portfolioCard/PortfolioCard";
 import { works } from "../../utils/portfolio";
 
 export default function Portfolio() {
-  console.log(works.tag);
-
   return (
     <section id="projects" className="container section section__size">
       <h2 className="section__title">Recent works</h2>

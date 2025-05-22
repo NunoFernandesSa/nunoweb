@@ -4,14 +4,35 @@
  */
 
 /**
+ * node modules
+ */
+import { useRef } from "react";
+
+/**
  * formik & yup
  */
 import { useFormik } from "formik";
 
 /**
- * Validators
+ * Form validators
  */
 import { validationSchema } from "../../../validators/validatorContactForm";
+
+/**
+ * emailjs
+ */
+import emailjs from "@emailjs/browser";
+
+/**
+ * toast
+ */
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+/**
+ * env
+ */
+import { email_js } from "../../../utils/emailjs";
 
 /**
  * Style css
@@ -19,6 +40,11 @@ import { validationSchema } from "../../../validators/validatorContactForm";
 import "./contactForm.css";
 
 export default function ContactForm() {
+  const form = useRef();
+
+  // Initialisation de EmailJS
+  emailjs.init(email_js.PUBLIC_KEY);
+
   // Initialisation de Formik
   const formik = useFormik({
     initialValues: {
@@ -27,21 +53,28 @@ export default function ContactForm() {
       message: "",
     },
     validationSchema,
-    onSubmit: (values, { setSubmitting, resetForm }) => {
-      // Ici vous pouvez ajouter votre logique d'envoi
-      console.log("Données du formulaire:", values);
-
-      // Simulation d'envoi asynchrone
-      setTimeout(() => {
-        alert(JSON.stringify(values, null, 2));
-        setSubmitting(false);
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
+      try {
+        console.log("Form data:", values);
+        await emailjs.sendForm(
+          email_js.SERVICE_ID,
+          email_js.TEMPLATE_ID,
+          form.current,
+          email_js.PUBLIC_KEY
+        );
+        toast.success("Message sent successfully!");
         resetForm();
-      }, 1000);
+      } catch (error) {
+        toast.error("⚠️ An error has occurred. Please try again later!", error);
+        console.error("EmailJS Error:", error);
+      } finally {
+        setSubmitting(false);
+      }
     },
   });
   return (
     <div className="">
-      <form onSubmit={formik.handleSubmit} className="contact-form">
+      <form ref={form} onSubmit={formik.handleSubmit} className="contact-form">
         <div className="form-group">
           <input
             id="name"

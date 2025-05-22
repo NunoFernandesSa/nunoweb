@@ -18,12 +18,16 @@ import Logo from "./components/ui/common/logo/logo";
 import Footer from "./components/ui/common/footer/Footer";
 
 /**
- * Styles
+ * Toast
  */
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
     <>
+      <ToastContainer />
+
       {/* rigth sidebar */}
       <SideBar />
       {/* main content */}
