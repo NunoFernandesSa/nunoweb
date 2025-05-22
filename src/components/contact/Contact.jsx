@@ -111,7 +111,7 @@ export default function Contact() {
                   : ""
               }`}
             >
-              {formik.isSubmitting ? "Sending..." : "Send"}
+              {formik.isSubmitting ? "Sending..." : "Send message"}
             </button>
           </form>
         </div>
