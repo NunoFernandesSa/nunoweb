@@ -6,7 +6,7 @@
 /**
  * Components
  */
-import SocialButton from "./../../ui/common/socialButton/SocialButton";
+import SocialButton from "../../ui/common/socialButton/SocialButton";
 
 /**
  * Style css
@@ -16,7 +16,7 @@ import "./headersocials.css";
 /**
  * Data
  */
-import { social } from "./../../../utils/social";
+import { social } from "../../../utils/social";
 
 /**
  * React
