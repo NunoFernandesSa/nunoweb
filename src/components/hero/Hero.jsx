@@ -31,7 +31,7 @@ export default function Hero() {
           alt="Ma photo de profil"
           width={300}
           height={300}
-          className="rounded-3xl p-2 border-4 border-dashed mb-6 border-firstColor"
+          className="rounded-3xl p-2 border-4 border-dashed mb-6 border-secondary"
         />
         <HeaderSocials />
       </div>
