@@ -29,7 +29,7 @@ export default function PortfolioCard({
 
         <div className="portfolio__text__container">
           <h2 className="portfolio__title">{title}</h2>
-          <p className="text-sm mb-3">{description}</p>
+          <p className="text-sm min-h-[220px]">{description}</p>
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((tag, tagIndex) => (
               <span key={tagIndex} className="portfolio__tags">

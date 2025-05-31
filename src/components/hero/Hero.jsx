@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full min-h-[80vh] flex flex-wrap justify-center items-center gap-0 md:gap-10"
+      className="w-full min-h-[70vh] flex flex-wrap justify-center items-center gap-0 md:gap-10"
     >
       <div className="flex justify-center items-center flex-col p-6 lg:p-0 text-center">
         <img

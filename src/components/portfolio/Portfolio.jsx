@@ -23,7 +23,7 @@ export default function Portfolio() {
         <p></p>
       </div>
 
-      <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))] mx-auto max-w-6xl justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5 mx-auto max-w-6xl justify-center">
         {works.map((item, index) => (
           <PortfolioCard
             key={index}
