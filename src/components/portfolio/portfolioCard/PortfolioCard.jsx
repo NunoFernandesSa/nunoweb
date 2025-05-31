@@ -21,7 +21,7 @@ export default function PortfolioCard({
   tags,
 }) {
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" title={"Go to web site " + title}>
       <div className="portfolio__card relative">
         <figure className="portfolio__figure">
           <img src={imgLink} alt={title} />
