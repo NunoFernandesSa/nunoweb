@@ -14,7 +14,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 // import Blog from "./components/blog/Blog";
 import SideBar from "./components/ui/common/sidebar/SideBar";
-import Logo from "./components./ui/common/logo/Logo";
+import Logo from "./components/ui/common/logo/Logo/";
 import Footer from "./components/ui/common/footer/Footer";
 
 /**
