@@ -23,23 +23,24 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex flex-col justify-center items-center"
+      className="w-full min-h-[80vh] flex flex-wrap justify-center items-center gap-0 md:gap-10"
     >
-      <div className="flex justify-center items-center flex-col flex-wrap p-6 lg:p-0 text-center">
-        <div className="">
-          <img
-            src={profile_photo}
-            alt="Ma photo de profil"
-            width={240}
-            height={240}
-            className="rounded-full p-2 border-4 border-dashed mb-6 border-firstColor"
-          />
-        </div>
-
+      <div className="flex justify-center items-center flex-col p-6 lg:p-0 text-center">
+        <img
+          src={profile_photo}
+          alt="Ma photo de profil"
+          width={240}
+          height={240}
+          className="rounded-full p-2 border-4 border-dashed mb-6 border-firstColor"
+        />
         <HeaderSocials />
+      </div>
 
+      <div className="px-3 md:px-6 text-center md:text-start">
         <h2 className="hero__my__name">Nuno Fernandes</h2>
-        <h1 className="hero__title section__title ">Full Stack Developer</h1>
+        <h1 className="hero__title text-2xl md:text-3xl">
+          Full Stack Developer
+        </h1>
         <h2 className="hero__subtitle">🚀 Full Stack, Full Impact</h2>
         <h3 className="hero__text">
           Building future-ready applications with innovation and flexibility at
