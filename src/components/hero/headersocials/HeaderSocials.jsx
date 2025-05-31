@@ -31,7 +31,8 @@ export default function HeaderSocials() {
             <SocialButton
               href={social.href}
               imgSource={social.imgSource}
-              alt={social.alt}
+              alt={"Go to " + social.alt}
+              title={"Go to " + social.alt}
               width={86}
               className={"social__logo__button relative"}
             />

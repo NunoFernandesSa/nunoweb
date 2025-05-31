@@ -25,8 +25,10 @@ export default function AboutDataContainer() {
           className="btn"
           href="/pdf/CV-NunoF-Développeur-fullstack.pdf"
           target="_blank"
+          alt="Dowload my Curriculum Vitae"
+          title="Dowload my Curriculum Vitae"
         >
-          Dowload CV
+          Curriculum Vitae
         </a>
 
         {/* <div className="flex gap-3">

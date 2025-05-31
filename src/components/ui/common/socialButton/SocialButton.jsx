@@ -17,12 +17,19 @@ export default function SocialButton({
   href,
   imgSource,
   alt,
+  title,
   width,
   className,
 }) {
   return (
     <a href={href} target="_blanc">
-      <img src={imgSource} alt={alt} width={width} className={className} />
+      <img
+        src={imgSource}
+        alt={alt}
+        width={width}
+        className={className}
+        title={title}
+      />
     </a>
   );
 }
@@ -30,6 +37,7 @@ SocialButton.propTypes = {
   href: PropTypes.string.isRequired,
   imgSource: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,
   className: PropTypes.string.isRequired,
 };

@@ -51,8 +51,8 @@ export default function Hero() {
           classes={"btn mt-3 relative"}
           href={"#contact"}
           btnText={"Hire me"}
-          title={"Hire me"}
-          alt={"Hire me"}
+          title={"Hire me button"}
+          alt={"Hire me button"}
         />
       </div>
     </section>
