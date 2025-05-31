@@ -18,6 +18,10 @@ import "./headersocials.css";
  */
 import { social } from "./../../../utils/social";
 
+/**
+ * React
+ */
+
 export default function HeaderSocials() {
   return (
     <>

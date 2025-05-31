@@ -1,6 +1,9 @@
 .portfolio__card {
   @apply p-4 rounded-2xl bg-white ring-1 ring-inset hover:bg-accent/10 transition-all duration-500 ease-in-out cursor-pointer shadow-md;
 }
+.portfolio__card:hover {
+  @apply -translate-y-[5px];
+}
 
 .portfolio__figure {
   @apply aspect-auto rounded-lg mb-4;

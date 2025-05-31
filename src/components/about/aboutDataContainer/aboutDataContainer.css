@@ -1,5 +1,5 @@
 .about__data {
-  @apply p-8 bg-surface rounded-[var(--radius)] relative;
+  @apply p-8 bg-surface rounded-[var(--radius)];
 }
 .about__data::before {
   display: block;
