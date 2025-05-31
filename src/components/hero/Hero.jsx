@@ -47,7 +47,11 @@ export default function Hero() {
           their core.
         </h3>
 
-        <Button classes={"btn mt-3"} href={"#contact"} btnText={"Hire me"} />
+        <Button
+          classes={"btn mt-3 relative"}
+          href={"#contact"}
+          btnText={"Hire me"}
+        />
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ export default function PortfolioCard({
 }) {
   return (
     <a href={link} target="_blank">
-      <div className="portfolio__card">
+      <div className="portfolio__card relative">
         <figure className="portfolio__figure">
           <img src={imgLink} alt={title} />
         </figure>

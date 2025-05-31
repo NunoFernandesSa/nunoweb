@@ -74,7 +74,11 @@ export default function ContactForm() {
   });
   return (
     <div className="">
-      <form ref={form} onSubmit={formik.handleSubmit} className="contact-form">
+      <form
+        ref={form}
+        onSubmit={formik.handleSubmit}
+        className="contact-form relative"
+      >
         <div className="form-group">
           <input
             id="name"

@@ -23,9 +23,19 @@ import Footer from "./components/ui/common/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+/**
+ *
+ */
+import CanvasCursor from "./components/CanvasCursor/CanvasCursor ";
+
+/**
+ * Style css
+ */
+
 export default function App() {
   return (
     <>
+      <CanvasCursor />
       <ToastContainer />
 
       {/* rigth sidebar */}

@@ -27,7 +27,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-start gap-2 italic text-primary">
+          <div className="flex flex-col justify-center items-start gap-2 italic text-primary relative">
             <a
               href="mailto::n.fernandes.contact@gmail.com"
               className="hover:text-accent transition-all ease-in-out duration-300"

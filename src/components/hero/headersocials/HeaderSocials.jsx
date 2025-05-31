@@ -29,7 +29,7 @@ export default function HeaderSocials() {
               imgSource={social.imgSource}
               alt={social.alt}
               width={86}
-              className={"social__logo__button"}
+              className={"social__logo__button relative"}
             />
           </li>
         ))}
