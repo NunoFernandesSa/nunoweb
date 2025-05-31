@@ -16,7 +16,7 @@ import { works } from "../../utils/portfolio";
 
 export default function Portfolio() {
   return (
-    <section id="projects" className="container section section__size">
+    <section id="portfolio" className="container section section__size">
       <h2 className="section__title">Recent works</h2>
 
       <div className="section__subtitle">
