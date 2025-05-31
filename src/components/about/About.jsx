@@ -35,15 +35,15 @@ export default function About() {
         <img
           src={profile_photo}
           alt="Ma photo de profil"
-          width={240}
-          height={240}
+          width={160}
+          height={160}
           className="rounded-full p-2 border-4 border-accent bg-primary mx-auto hidden md:block"
         />
         <AboutDataContainer />
       </div>
 
       {/* ===== Skills ===== */}
-      <div className="skills__data my-16">
+      <div className="my-16">
         <div className="section__subtitle">
           <p>
             I expertly wield cutting-edge technologies to build high-performance

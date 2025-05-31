@@ -29,10 +29,10 @@ export default function AboutDataContainer() {
           Dowload CV
         </a>
 
-        <div className="flex gap-3">
+        {/* <div className="flex gap-3">
           <a className="btn" href="" target="_blank"></a>
           <a className="btn" href="" target="_blank"></a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

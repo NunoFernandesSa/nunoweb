@@ -29,9 +29,9 @@ export default function Hero() {
         <img
           src={profile_photo}
           alt="Ma photo de profil"
-          width={240}
-          height={240}
-          className="rounded-full p-2 border-4 border-dashed mb-6 border-firstColor"
+          width={300}
+          height={300}
+          className="rounded-3xl p-2 border-4 border-dashed mb-6 border-firstColor"
         />
         <HeaderSocials />
       </div>

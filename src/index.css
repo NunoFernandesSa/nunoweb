@@ -85,7 +85,7 @@ img {
 }
 
 .section__subtitle {
-  @apply mb-6 text-center md:text-start font-semibold text-sm md:text-base;
+  @apply mb-6 text-start md:text-start font-semibold text-sm md:text-base;
 }
 
 .section__title::before {
