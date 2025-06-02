@@ -18,6 +18,11 @@ export default function Testimonials() {
     <section id="testimonials" className="section__size section container">
       <h2 className="section__title">Testimonials</h2>
 
+      <p className="section__subtitle">
+        Don’t just take my word for it. Here’s what others say about working
+        with me.
+      </p>
+
       <div className="testimonials__container">
         {testimonials.map(({ id, avatar, title, subtitle, comment }) => (
           <div key={id} className="testimonials__content">

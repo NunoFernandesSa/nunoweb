@@ -14,7 +14,6 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 // import Blog from "./components/blog/Blog";
 import SideBar from "./components/ui/common/sidebar/SideBar";
-import Logo from "./components/ui/common/logo/Logo/";
 import Footer from "./components/ui/common/footer/Footer";
 
 /**
@@ -41,9 +40,7 @@ export default function App() {
       {/* rigth sidebar */}
       <SideBar />
       {/* main content */}
-      <span>
-        <Logo />
-      </span>
+
       <main className="md:w-[calc(100vw-90px)]">
         <Hero />
         <About />

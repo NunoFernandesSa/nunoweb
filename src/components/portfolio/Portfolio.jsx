@@ -19,9 +19,10 @@ export default function Portfolio() {
     <section id="portfolio" className="container section section__size">
       <h2 className="section__title">Recent works</h2>
 
-      <div className="section__subtitle">
-        <p></p>
-      </div>
+      <p className="section__subtitle">
+        Explore my recent work. Transforming ideas into powerful technical
+        solutions.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5 mx-auto max-w-6xl justify-center">
         {works.map((item, index) => (

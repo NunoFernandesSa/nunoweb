@@ -21,7 +21,9 @@ export default function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col justify-start items-start gap-3 mb-8 md:mb-0">
           <div className="">
-            <h3 className="text-h2FontSize">Get in touch</h3>
+            <h3 className="text-h2FontSize">
+              Got a question or a project in mind? Let’s talk!
+            </h3>
             <p className="text-secondary">
               Don&apos;t like forms? Send me an email.
             </p>
