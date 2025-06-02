@@ -1,25 +1,13 @@
 .about__data {
   @apply p-8 bg-surface rounded-[var(--radius)];
 }
-.about__data::before {
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 20%;
-  left: -0.93rem;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 15px solid #fff;
-}
 
 .about__data__shadow {
   box-shadow: var(--shadow);
 }
 
 .about__description {
-  @apply text-sm mb-3 md:mb-6;
+  @apply text-sm mb-2;
 }
 
 .about__buttons__section {

@@ -35,9 +35,9 @@ export default function About() {
         <img
           src={profile_photo}
           alt="Ma photo de profil"
-          width={160}
-          height={160}
-          className="rounded-full p-2 border-4 border-accent bg-primary mx-auto hidden md:block"
+          width={140}
+          height={140}
+          className="rounded-tr-[30px] rounded-bl-[30px] rounded-br-lg rounded-tl-lg p-2 border-4 border-accent/50 bg-white mx-auto hidden md:block"
         />
         <AboutDataContainer />
       </div>
