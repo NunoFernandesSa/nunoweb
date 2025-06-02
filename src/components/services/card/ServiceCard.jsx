@@ -16,7 +16,7 @@ import "./serviceCard.css";
 export default function ServiceCard({ image, title, description }) {
   return (
     <div className="service__card">
-      <img src={image} alt={title} />
+      <img src={image} alt={title} className="w-16" />
       <div className="flex flex-col gap-6">
         <h2 className="service__title">{title}</h2>
         <p className="service__description">{description}</p>

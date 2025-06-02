@@ -1,5 +1,5 @@
 .service__card {
-  @apply flex flex-wrap flex-col items-center justify-center p-6 gap-6 rounded-[var(--radius)] shadow-md text-center transition-all duration-300 ease-in-out;
+  @apply flex flex-wrap flex-col items-center justify-start p-6 gap-6 rounded-[var(--radius)] shadow-md text-center transition-all duration-300 ease-in-out;
 }
 
 .service__card:hover {

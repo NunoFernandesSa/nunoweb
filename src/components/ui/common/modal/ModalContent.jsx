@@ -68,6 +68,35 @@ export default function ModalContent() {
           jurisdiction of Versailles (Yvelines, France).
         </p>
       </section>
+
+      <section>
+        <h3>Images/Icons credits</h3>
+        <p>
+          <a
+            href="https://www.flaticon.com/fr/icones-gratuites/developpement"
+            title="développement icônes"
+          >
+            Design Circle - Flaticon
+          </a>
+        </p>
+        <p>
+          {" "}
+          <a
+            href="https://www.flaticon.com/fr/icones-gratuites/application-mobile"
+            title="application mobile icônes"
+          >
+            Pop Vectors - Flaticon
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.flaticon.com/fr/icones-gratuites/assistance"
+            title="assistance icônes"
+          >
+            Freepik - Flaticon
+          </a>
+        </p>
+      </section>
     </div>
   );
 }
