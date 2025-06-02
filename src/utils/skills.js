@@ -9,6 +9,8 @@ import mysql from "/images/skills/mysql.png";
 import react from "/images/skills/react.png";
 import dart from "/images/skills/dart-logo-48.png";
 import flutter from "/images/skills/flutter-logo-48.png";
+import wordpress from "/images/skills/wordpress.png";
+import vsc from "/images/skills/vscode.png";
 
 export const skills = [
   {
@@ -65,5 +67,20 @@ export const skills = [
     label: "Flutter",
     description: "Kit de développement logiciel",
     icon: flutter,
+  },
+  {
+    label: "Wordpress",
+    description: "CMS",
+    icon: wordpress,
+  },
+  {
+    label: "VSCode",
+    description: "IDE",
+    icon: vsc,
+  },
+  {
+    label: "Android Studio",
+    description: "IDE",
+    icon: "",
   },
 ];
