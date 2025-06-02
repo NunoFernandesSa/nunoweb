@@ -11,6 +11,7 @@ import dart from "/images/skills/dart-logo-48.png";
 import flutter from "/images/skills/flutter-logo-48.png";
 import wordpress from "/images/skills/wordpress.png";
 import vsc from "/images/skills/vscode.png";
+import androidStudio from "/images/skills/android-studio-icon.png";
 
 export const skills = [
   {
@@ -81,6 +82,6 @@ export const skills = [
   {
     label: "Android Studio",
     description: "IDE",
-    icon: "",
+    icon: androidStudio,
   },
 ];
