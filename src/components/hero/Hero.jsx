@@ -38,9 +38,10 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              As a freelance developer, I create custom web and mobile
-              applications. I work directly with my clients or in collaboration
-              with other tech and design experts.
+              As a freelance developer, I design and build tailored web and
+              mobile applications. Whether working directly with clients or
+              collaborating with tech and design professionals, I deliver
+              high-quality, customized solutions to meet your needs.
             </p>
 
             <p className="text-xl text-gray-200 font-semibold">
@@ -63,9 +64,10 @@ export default function Hero() {
                 alt="Profile photo"
                 className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-white/10 shadow-2xl mx-auto object-cover"
               />
-              <div className="mt-8">
-                <HeaderSocials />
-              </div>
+              <p className="text-center text-textPrimary font-sm italic my-1">
+                Nuno Fernandes
+              </p>
+              <HeaderSocials />
             </div>
           </div>
         </div>

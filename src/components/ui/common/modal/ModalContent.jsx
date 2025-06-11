@@ -3,7 +3,7 @@ export default function ModalContent() {
     <div className="space-y-4 text-primary">
       {/* Content */}
       <section>
-        <h3 className="font-semibold">Website Publisher</h3>
+        <h3 className="font-semibold text-primary">Website Publisher</h3>
         <p>Name : Fernandes Nuno</p>
         <p>Adress : Rue Pierre Curie, 78370 Plaisir</p>
         <p>Phone : +33 7 71 80 29 21</p>
@@ -11,13 +11,13 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Hosting Provider</h3>
+        <h3 className="text-primary">Hosting Provider</h3>
         <p>Name : Netlify, Inc.</p>
         <p>Website: www.netlify.com</p>
       </section>
 
       <section>
-        <h3>Intellectual Property</h3>
+        <h3 className="text-primary">Intellectual Property</h3>
         <p>
           All content on this site (texts, images, logos, code, etc.) is the
           exclusive property of Nuno Fernandes, unless stated otherwise.
@@ -27,7 +27,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Personal Data</h3>
+        <h3 className="text-primary">Personal Data</h3>
         <p>
           This site does not collect personal data without explicit consent.
           Information provided via contact forms (name, email, message) is used
@@ -36,7 +36,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Cookies</h3>
+        <h3 className="text-primary">Cookies</h3>
         <p>
           This site uses no tracking or advertising cookies. Any technical
           cookies (essential for functionality) do not store identifiable
@@ -45,7 +45,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Liability</h3>
+        <h3 className="text-primary">Liability</h3>
         <p>
           While I strive to ensure accuracy, I cannot guarantee the completeness
           of the content. To report an error, please contact me via the email
@@ -54,7 +54,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>External Links</h3>
+        <h3 className="text-primary">External Links</h3>
         <p>
           Links to third-party sites do not imply endorsement. I am not
           responsible for their content or privacy practices.
@@ -62,7 +62,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Governing Law</h3>
+        <h3 className="text-primary">Governing Law</h3>
         <p>
           This site is governed by French law. Any disputes fall under the
           jurisdiction of Versailles (Yvelines, France).
@@ -70,7 +70,7 @@ export default function ModalContent() {
       </section>
 
       <section>
-        <h3>Images/Icons credits</h3>
+        <h3 className="text-primary">Images/Icons credits</h3>
         <p>
           <a
             href="https://www.flaticon.com/fr/icones-gratuites/developpement"
@@ -80,7 +80,6 @@ export default function ModalContent() {
           </a>
         </p>
         <p>
-          {" "}
           <a
             href="https://www.flaticon.com/fr/icones-gratuites/application-mobile"
             title="application mobile icônes"

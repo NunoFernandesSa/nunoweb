@@ -28,13 +28,13 @@ export const navLinks = [
     icon: "icon-briefcase",
     href: "#portfolio",
   },
-  {
-    id: "testimonials",
-    path: "/testimonials",
-    label: "Testimonials",
-    icon: "icon-bubble",
-    href: "#testimonials",
-  },
+  // {
+  //   id: "testimonials",
+  //   path: "/testimonials",
+  //   label: "Testimonials",
+  //   icon: "icon-bubble",
+  //   href: "#testimonials",
+  // },
   {
     id: "contact",
     path: "/contact",

@@ -21,9 +21,9 @@ export default function AboutDataContainer() {
           </p>
 
           <p className="about__description leading-relaxed">
-            Innovation drives me forward - I&apos;m constantly immersed in
-            emerging technologies and industry trends, pushing the boundaries of
-            what&apos;s possible while honing my craft to perfection.
+            I&apos;m constantly immersed in emerging technologies and industry
+            trends, pushing the boundaries of what&apos;s possible while honing
+            my craft to perfection.
           </p>
 
           <p className="about__description leading-relaxed">

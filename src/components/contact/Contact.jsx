@@ -45,9 +45,9 @@ export default function Contact() {
           </div>
           <img
             src="/images/logo-white.png"
-            alt=""
-            width={160}
-            className="rounded-lg"
+            alt="Mon Logo"
+            width={200}
+            className="rounded-lg mx-auto md:mx-0"
           />
         </div>
 
