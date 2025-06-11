@@ -1,6 +1,6 @@
 export default function ModalContent() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 text-primary">
       {/* Content */}
       <section>
         <h3 className="font-semibold">Website Publisher</h3>
