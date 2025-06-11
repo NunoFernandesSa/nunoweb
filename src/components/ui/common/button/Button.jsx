@@ -12,9 +12,9 @@ import PropTypes from "prop-types";
  * Style css
  */
 
-export default function Button({ classes, href, btnText, title, alt }) {
+export default function Button({ classes, href, btnText, title }) {
   return (
-    <a className={classes} href={href} title={title} alt={alt}>
+    <a className={classes} href={href} title={title}>
       {btnText}
     </a>
   );
@@ -26,5 +26,4 @@ Button.propTypes = {
   btnText: PropTypes.string,
   href: PropTypes.string,
   title: PropTypes.string,
-  alt: PropTypes.string,
 };

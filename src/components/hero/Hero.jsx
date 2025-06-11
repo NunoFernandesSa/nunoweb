@@ -23,37 +23,52 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full min-h-[70vh] pt-16 flex flex-wrap justify-center items-center gap-0 md:gap-10"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden"
     >
-      <div className="flex justify-center items-center flex-col p-6 lg:p-0 text-center">
-        <img
-          src={profile_photo}
-          alt="Ma photo de profil"
-          width={300}
-          height={300}
-          className="rounded-full p-2 border-4 border-dashed mb-6 border-secondary"
-        />
-        <HeaderSocials />
-      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                Full Stack
+              </h1>
+              <h2 className="text-4xl lg:text-6xl font-bold text-white">
+                Developer
+              </h2>
+            </div>
 
-      <div className="px-3 md:px-6 text-center md:text-start">
-        <h2 className="hero__my__name">Nuno Fernandes</h2>
-        <h1 className="hero__title text-2xl md:text-3xl">
-          Full Stack Developer
-        </h1>
-        <h2 className="hero__subtitle">🚀 Full Stack, Full Impact</h2>
-        <h3 className="hero__text">
-          Building future-ready applications with innovation and flexibility at
-          their core.
-        </h3>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              As a freelance developer, I create custom web and mobile
+              applications. I work directly with my clients or in collaboration
+              with other tech and design experts.
+            </p>
 
-        <Button
-          classes={"btn mt-3 relative"}
-          href={"#contact"}
-          btnText={"Hire me"}
-          title={"Hire me button"}
-          alt={"Hire me button"}
-        />
+            <p className="text-xl text-gray-200 font-semibold">
+              Do you have an idea? I can turn it into a product.
+            </p>
+
+            <Button
+              classes="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200"
+              href="#contact"
+              btnText="Let's Connect"
+              title="Contact button"
+            />
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <div className="relative">
+              <img
+                src={profile_photo}
+                alt="Profile photo"
+                className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-white/10 shadow-2xl mx-auto object-cover"
+              />
+              <div className="mt-8">
+                <HeaderSocials />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

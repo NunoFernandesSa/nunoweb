@@ -10,13 +10,13 @@ export default {
         sans: ["Rubik", "sans-serif"],
       },
       colors: {
-        primary: "#4A5568", // Modern slate blue-gray
-        secondary: "#718096", // Lighter blue-gray
-        accent: "#3B82F6", // Vibrant blue
-        textPrimary: "#2D3748", // Dark blue-gray for text
-        background: "#EDF2F7", // Light cool gray background
-        surface: "#FFFFFF", // Pure white
-        hover: "#2C5282", // Deep blue for hover states
+        primary: "#271966",
+        secondary: "#718096",
+        accent: "#3B82F6",
+        textPrimary: "#FFFFFF",
+        background: "#E6E6E6",
+        surface: "#FFFFFF",
+        hover: "#2C5282",
       },
       fontSize: {
         biggestFontSize: "2.25rem",

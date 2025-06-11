@@ -24,12 +24,12 @@ export default function Contact() {
             <h3 className="text-h2FontSize">
               Got a question or a project in mind? Let’s talk!
             </h3>
-            <p className="text-secondary">
+            <p className="text-gray-300">
               Don&apos;t like forms? Send me an email.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-start gap-2 italic text-primary relative">
+          <div className="flex flex-col justify-center items-start gap-2 italic text-textPrimary relative">
             <a
               href="mailto::n.fernandes.contact@gmail.com"
               className="hover:text-accent transition-all ease-in-out duration-300"
@@ -47,7 +47,7 @@ export default function Contact() {
             src="/images/logo-white.png"
             alt=""
             width={100}
-            className="bg-accent rounded-lg"
+            className="rounded-lg"
           />
         </div>
 

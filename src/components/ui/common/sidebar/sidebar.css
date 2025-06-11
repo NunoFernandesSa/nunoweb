@@ -2,15 +2,15 @@
   @apply fixed top-0 right-4 w-16 h-full flex justify-center items-center z-50;
 }
 .sidebar__box {
-  @apply w-full h-auto flex flex-col items-center justify-center gap-2 md:gap-8 py-8 bg-accent rounded-lg;
+  @apply w-full h-[90%] flex flex-col items-center justify-center gap-2 md:gap-8 py-8 bg-white rounded-full  shadow-md;
 }
 
 .sidebar__nav__link {
-  @apply cursor-pointer text-surface text-base p-3 transition-all duration-300 ease-in-out;
+  @apply cursor-pointer text-hover text-base p-3 transition-all duration-300 ease-in-out;
 }
 .sidebar__nav__link:hover,
 .active {
-  @apply bg-hover rounded-lg transition-all duration-300 ease-in-out;
+  @apply bg-accent text-white rounded-lg transition-all duration-300 ease-in-out;
 }
 
 /* ===== ==================== ===== */
@@ -20,11 +20,11 @@
   .sidebar {
     position: fixed;
     top: auto;
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 0;
     right: 0;
     width: auto;
-    height: 36px;
+    height: 52px;
   }
   .sidebar__box {
     flex-direction: row;

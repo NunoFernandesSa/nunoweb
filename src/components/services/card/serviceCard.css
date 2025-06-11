@@ -7,13 +7,13 @@
 }
 
 .service__card:nth-child(1) {
-  @apply bg-[rgb(108,108,229)] shadow-[0_0_10px_rgb(108,108,229)] text-white;
+  @apply bg-[rgb(108,108,229)] shadow-[0_0_10px_rgb(108,108,229)];
 }
 .service__card:nth-child(2) {
-  @apply bg-[rgb(233,199,76)] shadow-[0_0_10px_rgba(233,199,76)] text-white;
+  @apply bg-[rgb(233,199,76)] shadow-[0_0_10px_rgba(233,199,76)];
 }
 .service__card:nth-child(3) {
-  @apply bg-[rgb(249,123,139)] shadow-[0_0_10px_rgb(108,108,229)] text-white;
+  @apply bg-[rgb(249,123,139)] shadow-[0_0_10px_rgb(108,108,229)];
 }
 
 .service__title {

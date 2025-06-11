@@ -8,20 +8,14 @@
  */
 import PropTypes from "prop-types";
 
-/**
- * Style css
- */
-import "./skillsContainer.css";
-
 export default function SkillsContainer({ icon, label, className }) {
   return (
     <div
-      className={`bg-surface shadow-lg w-full sm:w-auto rounded-md flex justify-start items-center py-2 px-3 gap-2 ${className}`}
+      className={`bg-surface shadow-lg w-full rounded-md flex justify-start items-center py-2 px-3 ${className}`}
     >
-      <img src={icon} className="skill__logo w-10 h-full" />
-      <div className="skills__box">
-        <h3 className="skills__subtitle">{label}</h3>
-      </div>
+      <img src={icon} className="w-10 h-full" />
+
+      <h3 className="text-primary">{label}</h3>
     </div>
   );
 }

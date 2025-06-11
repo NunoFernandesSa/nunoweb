@@ -39,7 +39,7 @@ textarea {
 }
 
 body {
-  @apply bg-background leading-[1.7];
+  @apply bg-gradient-to-b from-gray-900 to-gray-800 leading-[1.7];
 }
 
 h1,
@@ -81,11 +81,11 @@ img {
 }
 
 .section__title {
-  @apply relative text-h1FontSize lg:text-biggestFontSize font-semibold ms-[0.875rem] mb-[3.75rem] underline underline-offset-4 decoration-accent;
+  @apply text-3xl lg:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text;
 }
 
 .section__subtitle {
-  @apply mb-6 text-start md:text-start font-semibold text-sm md:text-base;
+  @apply text-xl leading-relaxed text-gray-700 dark:text-gray-300 my-6;
 }
 
 .section__title::before {

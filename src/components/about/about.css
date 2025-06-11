@@ -1,3 +1,0 @@
-.about__container {
-  @apply grid md:grid-cols-[3fr_9fr] grid-cols-[12fr] gap-8 justify-center items-center;
-}
