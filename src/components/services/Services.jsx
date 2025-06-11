@@ -18,7 +18,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="section container section__size bg-gray-400 dark:bg-gray-900 rounded-xl"
+      className="section container section__size rounded-xl"
     >
       <h2 className="section__title">What I Do</h2>
       <div className="section__subtitle">
