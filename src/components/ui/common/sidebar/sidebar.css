@@ -2,15 +2,15 @@
   @apply fixed top-0 right-4 w-16 h-full flex justify-center items-center z-50;
 }
 .sidebar__box {
-  @apply w-full h-[90%] flex flex-col items-center justify-center gap-2 md:gap-8 py-8 bg-white rounded-full  shadow-md;
+  @apply w-full h-auto flex flex-col items-center justify-center gap-2 md:gap-8 py-8 bg-white rounded-full  shadow-md border-primary border-2;
 }
 
 .sidebar__nav__link {
-  @apply cursor-pointer text-hover text-base p-3 transition-all duration-300 ease-in-out;
+  @apply cursor-pointer text-primary text-base p-3 transition-all duration-300 ease-in-out;
 }
 .sidebar__nav__link:hover,
 .active {
-  @apply bg-accent text-white rounded-lg transition-all duration-300 ease-in-out;
+  @apply bg-primary text-white rounded-lg transition-all duration-300 ease-in-out;
 }
 
 /* ===== ==================== ===== */
@@ -29,6 +29,8 @@
   .sidebar__box {
     flex-direction: row;
     padding: 1rem;
-    border-radius: 0;
+    /* border-radius: 0; */
+    width: auto;
+    border: 1px solid #271966;
   }
 }
