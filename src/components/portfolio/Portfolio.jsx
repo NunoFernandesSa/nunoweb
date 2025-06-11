@@ -4,9 +4,8 @@
  */
 
 /**
- * Style css
+ * Components
  */
-import "./portfolio.css";
 import PortfolioCard from "./portfolioCard/PortfolioCard";
 
 /**

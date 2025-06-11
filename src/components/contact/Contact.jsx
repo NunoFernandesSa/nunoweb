@@ -18,11 +18,11 @@ export default function Contact() {
     <section id="contact" className="section__size section container">
       <h2 className="section__title">Get in touch !</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="flex flex-col justify-start items-start gap-3 mb-8 md:mb-0">
           <div className="">
-            <h3 className="text-h2FontSize">
-              Got a question or a project in mind? Let’s talk!
+            <h3 className="text-h2FontSize mt-6">
+              Got a question or a project in mind? Let’s talk !
             </h3>
             <p className="text-gray-300">
               Don&apos;t like forms? Send me an email.
@@ -46,7 +46,7 @@ export default function Contact() {
           <img
             src="/images/logo-white.png"
             alt=""
-            width={100}
+            width={160}
             className="rounded-lg"
           />
         </div>

@@ -1,5 +1,5 @@
 .about__data {
-  @apply p-8 bg-surface rounded-[var(--radius)];
+  @apply p-3 md:p-8 bg-surface rounded-[var(--radius)];
 }
 
 .about__data__shadow {
