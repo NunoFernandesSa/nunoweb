@@ -17,8 +17,8 @@ export default function SideBar() {
         <nav className="sidebar__box">
           {navLinks &&
             navLinks.map((link, index) => (
-              <ul key={`nav-link-${index}`} className="">
-                <li className="">
+              <ul key={`nav-link-${index}`}>
+                <li>
                   <a
                     href={link.href}
                     className={`sidebar__nav__link ${
