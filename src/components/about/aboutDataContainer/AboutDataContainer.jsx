@@ -38,7 +38,6 @@ export default function AboutDataContainer() {
           <a
             className="inline-flex items-center gap-2 hover:transform hover:scale-105 transition-transform outline-1 outline-white rounded-full px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-black"
             href="#contact"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <span>Let&apos;s Talk !</span>
