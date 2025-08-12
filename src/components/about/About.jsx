@@ -51,7 +51,7 @@ export default function About() {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="transform hover:scale-110 transition-all duration-300 w-full sm:w-auto"
+                className="transform hover:scale-110 transition-all duration-300"
               >
                 <SkillsContainer icon={skill.icon} label={skill.label} />
               </div>
