@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="container h-16 flex flex-wrap justify-between items-center px-3 md:px-20 text-xs mb-20 md:mb-0 mt-16 text-textPrimary border-t-[1px]">
       <div className="w-full md:w-auto">
-        &copy; 2025 nunoweb | All rights reserved.
+        &copy; 2025 nunofernandes-dev.com | All rights reserved.
       </div>
       <div className="w-full md:w-auto"></div>
       <button
