@@ -23,14 +23,17 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 /**
- *
+ * Canvas Cursor
  */
 import CanvasCursor from "./components/CanvasCursor/CanvasCursor ";
 
 /**
- * Style css
+ * The App component serves as the main entry point for the application, rendering
+ * the essential layout and components of the portfolio website. It incorporates
+ * interactive elements such as the CanvasCursor for visual effects and ToastContainer
+ * for notifications. The layout includes a sidebar, main content area with various
+ * sections like Hero, About, Services, Portfolio, and Contact, as well as a Footer.
  */
-
 export default function App() {
   return (
     <>

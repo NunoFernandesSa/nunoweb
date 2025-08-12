@@ -12,6 +12,8 @@ import flutter from "/images/skills/flutter-logo-48.png";
 import wordpress from "/images/skills/wordpress.png";
 import vsc from "/images/skills/vscode.png";
 import androidStudio from "/images/skills/android-studio-icon.png";
+import nestjs from "/images/skills/nest.js.png";
+import { label } from "motion/react-client";
 
 export const skills = [
   {
@@ -43,6 +45,11 @@ export const skills = [
     label: "Django",
     description: "Framework Back-end",
     icon: django,
+  },
+  {
+    label: "NestJS",
+    description: "Framework Back-end",
+    icon: nestjs,
   },
   {
     label: "PostgreSQL",

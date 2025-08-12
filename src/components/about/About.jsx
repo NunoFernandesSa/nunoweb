@@ -14,6 +14,13 @@ import AboutDataContainer from "./aboutDataContainer/AboutDataContainer";
  */
 import { skills } from "./../../utils/skills";
 
+/**
+ * The About component renders the About Me section of the website, which
+ * includes a brief description of the developer, their skills, and a link to
+ * their contact information.
+ *
+ * @returns {JSX.Element} A JSX element representing the About Me section
+ */
 export default function About() {
   return (
     <section
