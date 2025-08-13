@@ -11,7 +11,7 @@ import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-// import Testimonials from "./components/testimonials/Testimonials";
+import Testimonials from "./components/testimonials/Testimonials";
 // import Blog from "./components/blog/Blog";
 import SideBar from "./components/ui/common/sidebar/SideBar";
 import Footer from "./components/ui/common/footer/Footer";
@@ -49,7 +49,7 @@ export default function App() {
         <About />
         <Services />
         <Portfolio />
-        {/* <Testimonials /> */}
+        <Testimonials />  
         <Contact />
         {/* <Blog /> */}
       </main>

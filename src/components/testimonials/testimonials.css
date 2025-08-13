@@ -7,10 +7,10 @@
 }
 
 .testimonial__author {
-  @apply flex flex-row justify-start items-center text-start gap-4 mb-3;
+  @apply flex flex-row justify-start items-center text-start gap-4 my-3;
 }
-.testimonial__author h3 {
-  @apply text-primary text-lg;
+.testimonial__author .testomonial__title {
+  @apply text-primary text-sm;
 }
 
 .testomonial__subtitle {

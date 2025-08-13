@@ -26,14 +26,14 @@ export default function Testimonials() {
       <div className="testimonials__container">
         {testimonials.map(({ id, avatar, title, subtitle, comment }) => (
           <div key={id} className="testimonials__content">
+            <p className="comment">{`" ${comment} "`}</p>
             <div className="testimonial__author">
-              <img src={avatar} className="w-20 h-20 rounded-full" />
+              <img src={avatar} className="w-10 h-10 rounded-full" />
               <div>
-                <h3>{title}</h3>
+                <h3 className="testomonial__title">{title}</h3>
                 <span className="testomonial__subtitle">{subtitle}</span>
               </div>
             </div>
-            <p className="comment">{`" ${comment} "`}</p>
           </div>
         ))}
       </div>
